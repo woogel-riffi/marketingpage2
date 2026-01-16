@@ -2,7 +2,7 @@ import { clubInfo } from '@/content/data';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-primary-black via-[#1a1a1a] to-primary-green/20 text-white py-12 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-primary-black via-[#1a1a1a] to-[#73985a]/20 text-white py-12 relative overflow-hidden">
       <div 
         className="absolute inset-0 opacity-30"
         style={{

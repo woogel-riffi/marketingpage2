@@ -28,7 +28,7 @@ export default function UeberUnsPage() {
     <>
       <StructuredData type="persons" data={{ members: boardMembers }} />
       
-      <Section id="ueber-uns-hero" className="bg-gradient-to-br from-primary-green to-[#3a6a1f] text-white pt-12 relative overflow-hidden">
+      <Section id="ueber-uns-hero" className="bg-[#73985a] text-white pt-12 relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -37,8 +37,7 @@ export default function UeberUnsPage() {
         ></div>
         <div className="text-center mb-12 relative z-10">
           <h1 className="text-white">Über uns</h1>
-          <div className="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
-          <p className="text-lg text-white/95 max-w-3xl mx-auto">
+          <p className="text-lg text-white/95 max-w-3xl mx-auto mt-6">
             Pfeil & Bogen ist ein Bogensportverein, der sich durch das Engagement 
             ehrenamtlicher Mitglieder auszeichnet. Unser Verein lebt von der 
             freiwilligen Mitarbeit und dem Einsatz unserer Mitglieder, die sich 
@@ -60,7 +59,7 @@ export default function UeberUnsPage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
-              <h2 className="text-2xl font-bold mb-2 text-primary-green">
+              <h2 className="text-2xl font-bold mb-2 text-[#73985a]">
                 {member.name}
               </h2>
               <p className="text-lg text-primary-gold font-semibold mb-4">
@@ -74,9 +73,9 @@ export default function UeberUnsPage() {
         </div>
       </Section>
 
-      <Section id="ueber-uns-info" className="bg-gradient-to-br from-primary-green/10 to-primary-gold/10">
+      <Section id="ueber-uns-info" className="bg-gradient-to-br from-[#73985a]/10 to-[#73985a]/5">
         <Card id="ueber-uns-kontakt" className="max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold mb-4 text-primary-green">
+          <h2 className="text-2xl font-bold mb-4 text-[#73985a]">
             Kontakt
           </h2>
           <p className="text-gray-700 mb-4">

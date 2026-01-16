@@ -48,7 +48,7 @@ export default function TrainingPage() {
     <>
       <StructuredData type="events" data={{ trainingItems: trainings }} />
       
-      <Section id="training-hero" className="bg-gradient-to-br from-primary-green to-[#3a6a1f] text-white pt-12 relative overflow-hidden">
+      <Section id="training-hero" className="bg-[#73985a] text-white pt-12 relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -57,8 +57,7 @@ export default function TrainingPage() {
         ></div>
         <div className="text-center mb-12 relative z-10">
           <h1 className="text-white">Training</h1>
-          <div className="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
-          <div className="text-lg text-white/95 max-w-3xl mx-auto space-y-4">
+          <div className="text-lg text-white/95 max-w-3xl mx-auto space-y-4 mt-6">
             <p>
               Um an unseren Trainings teilzunehmen, melden Sie sich bitte per E-Mail an. 
               Wir bieten verschiedene Trainingsformate für alle Altersgruppen und Leistungsniveaus.
@@ -74,12 +73,9 @@ export default function TrainingPage() {
         <div className="space-y-12">
           {trainingsByCategory.map(({ category, items }, index) => (
             <div key={category}>
-              <div className="flex items-center mb-6">
-                <h2 className="text-3xl font-bold text-primary-green">
-                  {category}
-                </h2>
-                <div className={`flex-1 h-1 ml-4 ${index % 2 === 0 ? 'bg-primary-gold' : 'bg-primary-green'}`}></div>
-              </div>
+              <h2 className="text-3xl font-bold mb-6 text-[#73985a]">
+                {category}
+              </h2>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {items.map((training) => (
                   <Card key={training.id} id={`event-${training.id}`}>
@@ -108,7 +104,7 @@ export default function TrainingPage() {
                             {training.notes}
                           </p>
                         )}
-                        <p className="text-sm text-primary-green font-semibold">
+                        <p className="text-sm text-[#73985a] font-semibold">
                           Anmeldung per E-Mail
                         </p>
                       </div>

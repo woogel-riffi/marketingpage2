@@ -82,7 +82,7 @@ export default function VereinPage() {
         data={{ amenities: facilityNames }}
       />
 
-      <Section id="verein-hero" className="bg-gradient-to-br from-primary-green to-[#3a6a1f] text-white relative overflow-hidden">
+      <Section id="verein-hero" className="bg-[#73985a] text-white relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -93,8 +93,7 @@ export default function VereinPage() {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
             Verein Pfeil & Bogen
           </h1>
-          <div className="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
-          <p className="text-xl md:text-2xl text-white/95 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/95 mb-8 leading-relaxed mt-6">
             Unser Verein befindet sich in {clubInfo.address.city} im {clubInfo.serviceArea}. 
             Wir verfügen über moderne Anlagen mit einem Vereinslokal, einem überdachten 
             Innenbereich für wetterunabhängiges Training, einer Aussenanlage für Freilufttraining 
@@ -110,7 +109,7 @@ export default function VereinPage() {
               <article
                 key={facility.id}
                 id={facility.id}
-                className="bg-white rounded-lg shadow-lg border-t-4 border-primary-green hover:border-primary-gold overflow-hidden transform hover:scale-105 transition-all"
+                className="bg-white rounded-lg shadow-lg border-t-4 border-[#73985a] hover:border-[#5d7a48] overflow-hidden transform hover:scale-105 transition-all"
               >
                 <div className="relative w-full h-64 bg-gray-200">
                   <Image
@@ -122,7 +121,7 @@ export default function VereinPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h2 className="text-3xl font-bold mb-4 text-primary-green">
+                  <h2 className="text-3xl font-bold mb-4 text-[#73985a]">
                     {facility.title}
                   </h2>
                   <p className="text-gray-700 leading-relaxed mb-4">

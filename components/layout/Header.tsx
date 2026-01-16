@@ -4,7 +4,7 @@ import { clubInfo } from '@/content/data';
 
 export default function Header() {
   return (
-    <header className="bg-white border-b-4 border-primary-gold sticky top-0 z-50 shadow-md">
+    <header className="bg-white border-b-2 border-[#73985a] sticky top-0 z-50 shadow-md">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Hauptnavigation">
         <div className="flex justify-between items-center h-20">
           <Link
@@ -25,46 +25,46 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="text-primary-green hover:text-primary-gold font-semibold transition-colors relative group"
+                className="text-[#73985a] hover:text-[#5d7a48] font-semibold transition-colors relative group"
               >
                 Start
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-gold group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#73985a] group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
             <li>
               <Link
                 href="/verein"
-                className="text-primary-green hover:text-primary-gold font-semibold transition-colors relative group"
+                className="text-[#73985a] hover:text-[#5d7a48] font-semibold transition-colors relative group"
               >
                 Verein
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-gold group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#73985a] group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
             <li>
               <Link
                 href="/training"
-                className="text-primary-green hover:text-primary-gold font-semibold transition-colors relative group"
+                className="text-[#73985a] hover:text-[#5d7a48] font-semibold transition-colors relative group"
               >
                 Training
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-gold group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#73985a] group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
             <li>
               <Link
                 href="/preise"
-                className="text-primary-green hover:text-primary-gold font-semibold transition-colors relative group"
+                className="text-[#73985a] hover:text-[#5d7a48] font-semibold transition-colors relative group"
               >
                 Preise
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-gold group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#73985a] group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
             <li>
               <Link
                 href="/ueber-uns"
-                className="text-primary-green hover:text-primary-gold font-semibold transition-colors relative group"
+                className="text-[#73985a] hover:text-[#5d7a48] font-semibold transition-colors relative group"
               >
                 Über uns
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-gold group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#73985a] group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
           </ul>
