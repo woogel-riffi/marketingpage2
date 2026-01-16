@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { preiseContent, clubInfo } from '@/content/data';
+import { prices, pricesLastUpdated } from '@/content/prices';
+import { clubInfo } from '@/content/data';
 import Section from '@/components/ui/Section';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
@@ -8,7 +9,7 @@ import StructuredData from '@/components/StructuredData';
 export const metadata: Metadata = {
   title: 'Preise - Pfeil & Bogen',
   description:
-    'Transparente Preise für Bogenschießen in Rifferswil. Jahres- und Saisonmitgliedschaften, Schnupperkurse und Einzelstunden.',
+    'Transparente Preise für Bogenschießen in Rifferswil. Mitgliedschaften, Kurse und Ausrüstungsmiete.',
   openGraph: {
     title: 'Preise - Pfeil & Bogen',
     description: 'Transparente Preise für Bogenschießen in Rifferswil.',
@@ -20,63 +21,109 @@ export const metadata: Metadata = {
 };
 
 export default function PreisePage() {
+  const membershipPrices = prices.filter((p) => p.id.startsWith('preis-mitgliedschaft'));
+  const coursePrices = prices.filter((p) => p.id.startsWith('preis-kurs'));
+  const equipmentPrice = prices.find((p) => p.id === 'preis-ausruestung-miete');
+
   return (
     <>
-      <StructuredData type="offers" data={{ prices: preiseContent.prices }} />
+      <StructuredData type="offers" data={{ prices }} />
       
       <Section id="preise-hero" className="bg-white pt-12">
         <div className="text-center mb-12">
-          <h1>{preiseContent.title}</h1>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            {preiseContent.intro}
-          </p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary-black">
+            Preise
+          </h1>
         </div>
       </Section>
 
-      <Section id="preise-liste" className="bg-gray-50">
-        <div className="grid md:grid-cols-2 gap-8">
-          {preiseContent.prices.map((price) => (
-            <Card key={price.id} id={price.id}>
-              <h2 className="text-2xl font-bold mb-2 text-primary-green">
-                {price.category}
-              </h2>
-              <div className="mb-4">
-                <span className="text-4xl font-bold text-primary-black">
-                  CHF {price.amount}
+      <Section id="preise-mitgliedschaft" className="bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-primary-green">Mitgliedschaft</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {membershipPrices.map((price) => (
+              <Card key={price.id} id={price.id}>
+                <h3 className="text-xl font-bold mb-3 text-primary-black">
+                  {price.category}
+                </h3>
+                <div className="mb-3">
+                  <span className="text-3xl font-bold text-primary-black">
+                    {price.amount} CHF
+                  </span>
+                  <span className="text-gray-600 ml-2">/Jahr</span>
+                </div>
+                <p className="text-gray-700">{price.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section id="preise-kurse" className="bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-primary-green">Kurse</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {coursePrices.map((price) => (
+              <Card key={price.id} id={price.id}>
+                <h3 className="text-xl font-bold mb-3 text-primary-black">
+                  {price.category}
+                </h3>
+                <div className="mb-3">
+                  {price.amount === 0 ? (
+                    <span className="text-2xl font-bold text-primary-green">
+                      Gratis
+                    </span>
+                  ) : (
+                    <>
+                      <span className="text-3xl font-bold text-primary-black">
+                        {price.amount} CHF
+                      </span>
+                      <span className="text-gray-600 ml-2">/Semester</span>
+                    </>
+                  )}
+                </div>
+                <p className="text-gray-700">{price.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section id="preise-ausruestung" className="bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-primary-green">Ausrüstung mieten</h2>
+          {equipmentPrice && (
+            <Card id={equipmentPrice.id}>
+              <h3 className="text-xl font-bold mb-3 text-primary-black">
+                {equipmentPrice.category}
+              </h3>
+              <div className="mb-3">
+                <span className="text-3xl font-bold text-primary-black">
+                  CHF
                 </span>
-                <span className="text-gray-600 ml-2">{price.period}</span>
+                <span className="text-gray-600 ml-2">/Jahr</span>
               </div>
-              <p className="text-gray-700 mb-6">{price.description}</p>
+              <p className="text-gray-700">{equipmentPrice.description}</p>
             </Card>
-          ))}
+          )}
         </div>
       </Section>
 
-      <Section id="preise-info" className="bg-white">
-        <Card id="preise-hinweise">
-          <h2 className="text-2xl font-bold mb-4 text-primary-green">
-            Weitere Informationen
-          </h2>
-          <p className="text-gray-700 mb-4">
-            Alle Preise verstehen sich inklusive Zugang zu unseren
-            Trainingsmöglichkeiten. Leihbögen sind für Anfänger verfügbar.
-            Mitglieder erhalten zusätzliche Vorteile bei Veranstaltungen.
+      <Section id="preise-footer" className="bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm text-gray-500 mb-6">
+            Stand: {pricesLastUpdated}
           </p>
-          <p className="text-gray-700 mb-6">
-            Für Fragen zu unseren Preisen oder individuellen Angeboten
-            kontaktieren Sie uns gerne.
+          <p className="text-lg text-gray-700 mb-4">
+            Fragen zu unseren Preisen?
           </p>
           <Button
             href={`mailto:${clubInfo.email}`}
             variant="primary"
-            className="mt-4"
           >
             Kontakt per E-Mail
           </Button>
-          <p className="text-sm text-gray-500 mt-6">
-            <strong>Stand:</strong> {preiseContent.lastUpdated}
-          </p>
-        </Card>
+        </div>
       </Section>
     </>
   );

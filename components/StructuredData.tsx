@@ -132,19 +132,51 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
 
   const getOffersSchema = () => {
     if (!data?.prices) return null;
-    return data.prices.map((price) => ({
+    
+    // Create individual offers
+    const offers = data.prices
+      .filter((price) => price.amount >= 0) // Include all offers (including free ones)
+      .map((price) => {
+        const offer: any = {
+          '@type': 'Offer',
+          name: price.category,
+          description: price.description,
+          priceCurrency: 'CHF',
+          availability: 'https://schema.org/InStock',
+          seller: {
+            '@type': 'Organization',
+            name: clubInfo.name,
+          },
+        };
+        
+        // Only include price if > 0
+        if (price.amount > 0) {
+          offer.price = price.amount;
+        } else {
+          offer.price = 0;
+          offer.priceSpecification = {
+            '@type': 'UnitPriceSpecification',
+            price: 0,
+            priceCurrency: 'CHF',
+          };
+        }
+        
+        return offer;
+      });
+
+    // Return as OfferCatalog containing the offers
+    return {
       '@context': 'https://schema.org',
-      '@type': 'Offer',
-      name: price.category,
-      description: price.description,
-      price: price.amount,
-      priceCurrency: 'CHF',
-      availability: 'https://schema.org/InStock',
-      seller: {
-        '@type': 'Organization',
-        name: clubInfo.name,
-      },
-    }));
+      '@type': 'OfferCatalog',
+      name: 'Preise - Pfeil & Bogen',
+      url: `${baseUrl}/preise`,
+      numberOfItems: offers.length,
+      itemListElement: offers.map((offer, index) => ({
+        '@type': 'Offer',
+        position: index + 1,
+        ...offer,
+      })),
+    };
   };
 
   const getPersonsSchema = () => {
