@@ -5,7 +5,7 @@ export default function Home() {
         <h1 className="text-6xl font-bold text-gray-800 mb-4 drop-shadow-lg">
           Hallo Rifferswil!
         </h1>
-        <p className="text-xl text-[rgba(127,56,214,1)] mt-4 leading-[50px] font-extrabold w-[440px]">
+        <p className="text-[30px] text-[rgba(127,56,214,1)] mt-4 leading-[50px] font-extrabold w-[650px]">
           Willkommen auf meiner Next.js Webseite
         </p>
       </div>
