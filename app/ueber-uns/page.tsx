@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { aboutContent, clubInfo } from '@/content/data';
 import Section from '@/components/ui/Section';
 import Card from '@/components/ui/Card';
@@ -36,6 +37,15 @@ export default function UeberUnsPage() {
         <div className="grid md:grid-cols-2 gap-8">
           {aboutContent.members.map((member) => (
             <Card key={member.id} id={member.id}>
+              <div className="relative w-full h-64 mb-4 bg-gray-200 rounded-lg overflow-hidden">
+                <Image
+                  src={member.imagePath}
+                  alt={`${member.name} - ${member.role}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
               <h2 className="text-2xl font-bold mb-2 text-primary-green">
                 {member.name}
               </h2>

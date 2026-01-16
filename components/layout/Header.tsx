@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { clubInfo } from '@/content/data';
 
 export default function Header() {
@@ -8,10 +9,17 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           <Link
             href="/"
-            className="text-2xl font-bold text-primary-black hover:text-primary-gold transition-colors"
+            className="flex items-center"
             aria-label="Zur Startseite"
           >
-            {clubInfo.name}
+            <Image
+              src="/images/Pfeil-Bogen Logo.png"
+              alt={`${clubInfo.name} Logo`}
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
           <ul className="flex space-x-8" role="list">
             <li>
