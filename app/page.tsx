@@ -28,21 +28,22 @@ export default function HomePage() {
       <StructuredData type="organization" />
       <StructuredData type="sportsActivity" />
       
-      <Section id="ueberblick" className="bg-gradient-to-b from-white to-gray-50">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary-black">
+      <Section id="ueberblick" className="bg-gradient-to-br from-primary-green via-[#3a6a1f] to-primary-green text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        <div className="text-center max-w-4xl mx-auto relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
             Pfeil & Bogen
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/95 mb-8 leading-relaxed">
             Unser Verein bietet Bogenschiessen in Rifferswil für Anfänger und Fortgeschrittene. 
             Wir führen regelmässige Trainings durch und bieten verschiedene Kursformate wie Einführungskurse, 
             Kinderkurse und freies Training an. Unsere Schiessanlage befindet sich im Bezirk Affoltern 
             und steht allen Interessierten offen.
           </p>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-white/90 mb-8">
             <a 
               href={`mailto:${clubInfo.email}`}
-              className="text-primary-green hover:text-primary-gold transition-colors underline"
+              className="inline-block bg-primary-gold text-primary-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-lg"
               aria-label={`Kontaktieren Sie uns per E-Mail: ${clubInfo.email}`}
             >
               Wir freuen uns über neue Mitglieder
@@ -51,28 +52,31 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section id="spiel" className="bg-white">
+      <Section id="spiel" className="bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-center">Bogenschiess-Spiel</h2>
-          <p className="text-lg text-gray-700 mb-6 text-center max-w-2xl mx-auto">
-            Probieren Sie unser interaktives Bogenschiess-Spiel aus und testen Sie Ihre Fähigkeiten.
-          </p>
-          <div className="relative w-full aspect-video">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4 text-primary-green">Bogenschiess-Spiel</h2>
+            <div className="w-24 h-1 bg-primary-gold mx-auto mb-4"></div>
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+              Probieren Sie unser interaktives Bogenschiess-Spiel aus und testen Sie Ihre Fähigkeiten.
+            </p>
+          </div>
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-primary-gold">
             <iframe
               src={LOVABLE_GAME_URL}
               title="Bogenschiess-Spiel - Interaktives Bogenschiessen"
-              className="w-full h-full border-0 rounded-lg shadow-lg"
+              className="w-full h-full border-0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               aria-label="Interaktives Bogenschiess-Spiel"
             />
           </div>
-          <div className="mt-4 text-center">
+          <div className="mt-6 text-center">
             <a
               href={LOVABLE_GAME_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-green hover:text-primary-gold transition-colors underline"
+              className="inline-block bg-primary-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#3a6a1f] transition-all transform hover:scale-105 shadow-md"
               aria-label="Spiel in neuem Tab öffnen"
             >
               Spiel öffnen
@@ -81,41 +85,48 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section id="kurzinfos" className="bg-gray-50">
+      <Section id="kurzinfos" className="bg-gradient-to-br from-primary-gold/10 via-white to-primary-green/10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center">Kurzinfos</h2>
-          <ul className="space-y-4 text-lg text-gray-700 max-w-2xl mx-auto">
-            <li className="flex items-start">
-              <span className="text-primary-green mr-3 font-bold">•</span>
-              <span>
-                <strong>Standort:</strong> {clubInfo.address.city}, {clubInfo.serviceArea}
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-primary-green mr-3 font-bold">•</span>
-              <span>
-                <strong>Zielgruppe:</strong> Alle Altersgruppen, Anfänger und Fortgeschrittene
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-primary-green mr-3 font-bold">•</span>
-              <span>
-                <strong>Trainingsarten:</strong> Einführungskurse, Kinderkurse, Freies Training, Vereinsausflüge
-              </span>
-            </li>
-          </ul>
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4 text-primary-green">Kurzinfos</h2>
+            <div className="w-24 h-1 bg-primary-gold mx-auto"></div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-primary-green transform hover:scale-105 transition-transform">
+              <div className="text-3xl mb-3">📍</div>
+              <h3 className="font-bold text-primary-green mb-2">Standort</h3>
+              <p className="text-gray-700">
+                {clubInfo.address.city}, {clubInfo.serviceArea}
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-primary-gold transform hover:scale-105 transition-transform">
+              <div className="text-3xl mb-3">👥</div>
+              <h3 className="font-bold text-primary-gold mb-2">Zielgruppe</h3>
+              <p className="text-gray-700">
+                Alle Altersgruppen, Anfänger und Fortgeschrittene
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-primary-green transform hover:scale-105 transition-transform">
+              <div className="text-3xl mb-3">🎯</div>
+              <h3 className="font-bold text-primary-green mb-2">Trainingsarten</h3>
+              <p className="text-gray-700">
+                Einführungskurse, Kinderkurse, Freies Training, Vereinsausflüge
+              </p>
+            </div>
+          </div>
         </div>
       </Section>
 
-      <Section id="kontakt" className="bg-white">
+      <Section id="kontakt" className="bg-gradient-to-br from-primary-green to-[#3a6a1f] text-white">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4">Kontakt</h2>
-          <p className="text-lg text-gray-700 mb-6">
+          <h2 className="text-4xl font-bold mb-4 text-white">Kontakt</h2>
+          <div className="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p className="text-lg text-white/95 mb-8">
             Haben Sie Fragen oder möchten Sie mehr erfahren? Wir freuen uns über Ihre Nachricht.
           </p>
           <a
             href={`mailto:${clubInfo.email}`}
-            className="inline-block text-primary-green hover:text-primary-gold transition-colors underline text-lg"
+            className="inline-block bg-primary-gold text-primary-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-lg text-lg"
             aria-label={`Kontaktieren Sie uns per E-Mail: ${clubInfo.email}`}
           >
             {clubInfo.email}

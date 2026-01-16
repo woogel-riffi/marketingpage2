@@ -82,12 +82,14 @@ export default function VereinPage() {
         data={{ amenities: facilityNames }}
       />
 
-      <Section id="verein-hero" className="bg-gradient-to-b from-white to-gray-50">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary-black">
+      <Section id="verein-hero" className="bg-gradient-to-br from-primary-green to-[#3a6a1f] text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        <div className="text-center max-w-4xl mx-auto relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
             Verein Pfeil & Bogen
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
+          <div className="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p className="text-xl md:text-2xl text-white/95 mb-8 leading-relaxed">
             Unser Verein befindet sich in {clubInfo.address.city} im {clubInfo.serviceArea}. 
             Wir verfügen über moderne Anlagen mit einem Vereinslokal, einem überdachten 
             Innenbereich für wetterunabhängiges Training, einer Aussenanlage für Freilufttraining 
@@ -96,14 +98,14 @@ export default function VereinPage() {
         </div>
       </Section>
 
-      <Section id="verein-einrichtungen" className="bg-white">
+      <Section id="verein-einrichtungen" className="bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {facilities.map((facility) => (
               <article
                 key={facility.id}
                 id={facility.id}
-                className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden"
+                className="bg-white rounded-lg shadow-lg border-t-4 border-primary-green hover:border-primary-gold overflow-hidden transform hover:scale-105 transition-all"
               >
                 <div className="relative w-full h-64 bg-gray-200">
                   <Image

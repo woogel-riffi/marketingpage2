@@ -28,10 +28,12 @@ export default function UeberUnsPage() {
     <>
       <StructuredData type="persons" data={{ members: boardMembers }} />
       
-      <Section id="ueber-uns-hero" className="bg-white pt-12">
-        <div className="text-center mb-12">
-          <h1>Über uns</h1>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+      <Section id="ueber-uns-hero" className="bg-gradient-to-br from-primary-green to-[#3a6a1f] text-white pt-12 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        <div className="text-center mb-12 relative z-10">
+          <h1 className="text-white">Über uns</h1>
+          <div className="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p className="text-lg text-white/95 max-w-3xl mx-auto">
             Pfeil & Bogen ist ein Bogensportverein, der sich durch das Engagement 
             ehrenamtlicher Mitglieder auszeichnet. Unser Verein lebt von der 
             freiwilligen Mitarbeit und dem Einsatz unserer Mitglieder, die sich 
@@ -40,7 +42,7 @@ export default function UeberUnsPage() {
         </div>
       </Section>
 
-      <Section id="ueber-uns-vorstand" className="bg-gray-50">
+      <Section id="ueber-uns-vorstand" className="bg-gradient-to-b from-gray-50 to-white">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {boardMembers.map((member) => (
             <Card key={member.id} id={member.id}>
@@ -67,8 +69,8 @@ export default function UeberUnsPage() {
         </div>
       </Section>
 
-      <Section id="ueber-uns-info" className="bg-white">
-        <Card id="ueber-uns-kontakt">
+      <Section id="ueber-uns-info" className="bg-gradient-to-br from-primary-green/10 to-primary-gold/10">
+        <Card id="ueber-uns-kontakt" className="max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold mb-4 text-primary-green">
             Kontakt
           </h2>

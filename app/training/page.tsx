@@ -48,28 +48,33 @@ export default function TrainingPage() {
     <>
       <StructuredData type="events" data={{ trainingItems: trainings }} />
       
-      <Section id="training-hero" className="bg-white pt-12">
-        <div className="text-center mb-12">
-          <h1>Training</h1>
-          <div className="text-lg text-gray-700 max-w-3xl mx-auto space-y-4">
+      <Section id="training-hero" className="bg-gradient-to-br from-primary-green to-[#3a6a1f] text-white pt-12 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        <div className="text-center mb-12 relative z-10">
+          <h1 className="text-white">Training</h1>
+          <div className="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <div className="text-lg text-white/95 max-w-3xl mx-auto space-y-4">
             <p>
               Um an unseren Trainings teilzunehmen, melden Sie sich bitte per E-Mail an. 
               Wir bieten verschiedene Trainingsformate für alle Altersgruppen und Leistungsniveaus.
             </p>
-            <p className="font-semibold text-gray-800">
+            <p className="font-semibold text-white bg-primary-gold/20 px-4 py-2 rounded-lg inline-block">
               Bitte beachten Sie: Die Termine sind festgelegt und können nicht verschoben werden.
             </p>
           </div>
         </div>
       </Section>
 
-      <Section id="training-schedule" className="bg-gray-50">
+      <Section id="training-schedule" className="bg-gradient-to-b from-gray-50 to-white">
         <div className="space-y-12">
-          {trainingsByCategory.map(({ category, items }) => (
+          {trainingsByCategory.map(({ category, items }, index) => (
             <div key={category}>
-              <h2 className="text-3xl font-bold mb-6 text-primary-green">
-                {category}
-              </h2>
+              <div className="flex items-center mb-6">
+                <h2 className="text-3xl font-bold text-primary-green">
+                  {category}
+                </h2>
+                <div className={`flex-1 h-1 ml-4 ${index % 2 === 0 ? 'bg-primary-gold' : 'bg-primary-green'}`}></div>
+              </div>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {items.map((training) => (
                   <Card key={training.id} id={`event-${training.id}`}>
