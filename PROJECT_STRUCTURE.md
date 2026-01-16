@@ -121,7 +121,7 @@ marketingpage/
 
 ## GEO Keyword Integration
 
-"Bogenschießen in Rifferswil" ist natürlich integriert in:
+"Bogenschiessen in Rifferswil" ist natürlich integriert in:
 - Landing Page Hero
 - Verein Page Intro
 - Training Page Intro

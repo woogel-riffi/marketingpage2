@@ -1,4 +1,4 @@
-# Pfeil & Bogen - Bogenschießen in Rifferswil
+# Pfeil & Bogen - Bogenschiessen in Rifferswil
 
 Website für den Bogensportverein Pfeil & Bogen in Hausen am Albis.
 

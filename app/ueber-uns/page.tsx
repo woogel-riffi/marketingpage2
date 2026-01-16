@@ -9,10 +9,10 @@ import StructuredData from '@/components/StructuredData';
 export const metadata: Metadata = {
   title: 'Über uns - Pfeil & Bogen',
   description:
-    'Lernen Sie das Team von Pfeil & Bogen kennen. Unser Vorstand setzt sich für Bogenschießen in Rifferswil ein.',
+    'Lernen Sie das Team von Pfeil & Bogen kennen. Unser Vorstand setzt sich für Bogenschiessen in Rifferswil ein.',
   openGraph: {
     title: 'Über uns - Pfeil & Bogen',
-    description: 'Lernen Sie das Team von Pfeil & Bogen kennen. Unser Vorstand setzt sich für Bogenschießen in Rifferswil ein.',
+    description: 'Lernen Sie das Team von Pfeil & Bogen kennen. Unser Vorstand setzt sich für Bogenschiessen in Rifferswil ein.',
     type: 'website',
     locale: 'de_CH',
     siteName: 'Pfeil & Bogen',

@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Pfeil & Bogen - Bogenschießen in Rifferswil',
+    default: 'Pfeil & Bogen - Bogenschiessen in Rifferswil',
     template: '%s | Pfeil & Bogen',
   },
   description:
-    'Bogenschießen in Rifferswil. Pfeil & Bogen bietet Training und Gemeinschaft für Bogensportbegeisterte im Bezirk Affoltern.',
+    'Bogenschiessen in Rifferswil. Pfeil & Bogen bietet Training und Gemeinschaft für Bogensportbegeisterte im Bezirk Affoltern.',
   metadataBase: new URL('https://www.pfeil-bogen.ch'),
 };
 

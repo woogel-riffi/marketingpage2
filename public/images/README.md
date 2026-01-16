@@ -4,10 +4,10 @@
 
 ### Hero-Bereich
 - `hero-archery.jpg` - Hauptbild für die Startseite (Bogenschütze in Aktion)
-- `hero-range.jpg` - Alternative: Schießanlage
+- `hero-range.jpg` - Alternative: Schiessanlage
 
 ### Verein
-- `range-overview.jpg` - Übersicht über die Schießanlage
+- `range-overview.jpg` - Übersicht über die Schiessanlage
 - `range-detail.jpg` - Detailaufnahme der Anlage
 - `facilities.jpg` - Einrichtungen (überdachte Bereiche, etc.)
 
@@ -32,7 +32,7 @@ import Image from 'next/image';
 
 <Image
   src="/images/hero-archery.jpg"
-  alt="Bogenschießen in Rifferswil"
+  alt="Bogenschiessen in Rifferswil"
   width={1200}
   height={600}
   priority

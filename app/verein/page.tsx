@@ -7,10 +7,10 @@ import StructuredData from '@/components/StructuredData';
 export const metadata: Metadata = {
   title: 'Verein Pfeil & Bogen',
   description:
-    'Erfahren Sie mehr über unseren Verein, unsere Anlagen und Einrichtungen. Bogenschießen in Rifferswil mit modernen Anlagen.',
+    'Erfahren Sie mehr über unseren Verein, unsere Anlagen und Einrichtungen. Bogenschiessen in Rifferswil mit modernen Anlagen.',
   openGraph: {
     title: 'Verein Pfeil & Bogen',
-    description: 'Erfahren Sie mehr über unseren Verein, unsere Anlagen und Einrichtungen. Bogenschießen in Rifferswil mit modernen Anlagen.',
+    description: 'Erfahren Sie mehr über unseren Verein, unsere Anlagen und Einrichtungen. Bogenschiessen in Rifferswil mit modernen Anlagen.',
     type: 'website',
     locale: 'de_CH',
     siteName: 'Pfeil & Bogen',
@@ -26,7 +26,7 @@ const facilities = [
     id: 'lokal',
     title: 'Lokal',
     description:
-      'Unser Vereinslokal bietet einen gemütlichen Aufenthaltsbereich für Mitglieder und Gäste. Hier können Sie sich nach dem Training entspannen, sich mit anderen Bogenschützen austauschen und Veranstaltungen genießen.',
+      'Unser Vereinslokal bietet einen gemütlichen Aufenthaltsbereich für Mitglieder und Gäste. Hier können Sie sich nach dem Training entspannen, sich mit anderen Bogenschützen austauschen und Veranstaltungen geniessen.',
     highlights: [
       'Gemütlicher Aufenthaltsbereich',
       'Küche für Veranstaltungen',
@@ -50,9 +50,9 @@ const facilities = [
     id: 'aussen',
     title: 'Trainingsbereich aussen',
     description:
-      'Unsere Außenanlage bietet Platz für verschiedene Bogenarten und Distanzen. Die Schießstände sind professionell ausgestattet und bieten optimale Bedingungen für Freilufttraining und Wettkämpfe.',
+      'Unsere Aussenanlage bietet Platz für verschiedene Bogenarten und Distanzen. Die Schiessstände sind professionell ausgestattet und bieten optimale Bedingungen für Freilufttraining und Wettkämpfe.',
     highlights: [
-      'Mehrere Schießstände',
+      'Mehrere Schiessstände',
       'Verschiedene Distanzen',
       'Für alle Bogenarten geeignet',
       'Professionelle Ausstattung',
@@ -90,7 +90,7 @@ export default function VereinPage() {
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
             Unser Verein befindet sich in {clubInfo.address.city} im {clubInfo.serviceArea}. 
             Wir verfügen über moderne Anlagen mit einem Vereinslokal, einem überdachten 
-            Innenbereich für wetterunabhängiges Training, einer Außenanlage für Freilufttraining 
+            Innenbereich für wetterunabhängiges Training, einer Aussenanlage für Freilufttraining 
             und einer Grillstelle für gesellige Veranstaltungen.
           </p>
         </div>

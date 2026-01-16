@@ -103,7 +103,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
       return data.events.map((event) => ({
         '@context': 'https://schema.org',
         '@type': 'Event',
-        name: `Bogenschießen Training - ${event.day}`,
+        name: `Bogenschiessen Training - ${event.day}`,
         description: event.description,
         startDate: `2024-01-01T${event.time.split(' - ')[0]}:00`,
         endDate: `2024-01-01T${event.time.split(' - ')[1]}:00`,

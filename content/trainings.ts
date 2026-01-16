@@ -11,7 +11,7 @@ export const trainings: TrainingItem[] = [
   // Einführungskurs - at least 3 items
   {
     id: 'einfuehrung-2026-01',
-    title: 'Einführungskurs Bogenschießen',
+    title: 'Einführungskurs Bogenschiessen',
     category: 'Einführungskurs',
     startDate: '2026-02-15',
     startTime: '10:00',
@@ -23,7 +23,7 @@ export const trainings: TrainingItem[] = [
   },
   {
     id: 'einfuehrung-2026-02',
-    title: 'Einführungskurs Bogenschießen',
+    title: 'Einführungskurs Bogenschiessen',
     category: 'Einführungskurs',
     startDate: '2026-03-08',
     startTime: '14:00',
@@ -35,7 +35,7 @@ export const trainings: TrainingItem[] = [
   },
   {
     id: 'einfuehrung-2026-03',
-    title: 'Einführungskurs Bogenschießen',
+    title: 'Einführungskurs Bogenschiessen',
     category: 'Einführungskurs',
     startDate: '2026-04-12',
     startTime: '10:00',
@@ -47,7 +47,7 @@ export const trainings: TrainingItem[] = [
   },
   {
     id: 'einfuehrung-2026-04',
-    title: 'Einführungskurs Bogenschießen',
+    title: 'Einführungskurs Bogenschiessen',
     category: 'Einführungskurs',
     startDate: '2026-05-10',
     startTime: '14:00',
@@ -60,7 +60,7 @@ export const trainings: TrainingItem[] = [
   // Kinderkurse - at least 3 items
   {
     id: 'kinderkurs-2026-01',
-    title: 'Kinderkurs Bogenschießen (8-12 Jahre)',
+    title: 'Kinderkurs Bogenschiessen (8-12 Jahre)',
     category: 'Kinderkurse',
     startDate: '2026-02-20',
     startTime: '14:00',
@@ -72,7 +72,7 @@ export const trainings: TrainingItem[] = [
   },
   {
     id: 'kinderkurs-2026-02',
-    title: 'Kinderkurs Bogenschießen (8-12 Jahre)',
+    title: 'Kinderkurs Bogenschiessen (8-12 Jahre)',
     category: 'Kinderkurse',
     startDate: '2026-03-15',
     startTime: '14:00',
@@ -84,7 +84,7 @@ export const trainings: TrainingItem[] = [
   },
   {
     id: 'kinderkurs-2026-03',
-    title: 'Kinderkurs Bogenschießen (8-12 Jahre)',
+    title: 'Kinderkurs Bogenschiessen (8-12 Jahre)',
     category: 'Kinderkurse',
     startDate: '2026-04-19',
     startTime: '14:00',
@@ -96,7 +96,7 @@ export const trainings: TrainingItem[] = [
   },
   {
     id: 'kinderkurs-2026-04',
-    title: 'Kinderkurs Bogenschießen (13-16 Jahre)',
+    title: 'Kinderkurs Bogenschiessen (13-16 Jahre)',
     category: 'Kinderkurse',
     startDate: '2026-05-17',
     startTime: '15:00',
@@ -192,7 +192,7 @@ export const trainings: TrainingItem[] = [
     locationLabel: 'Aussen',
     spotsTotal: 30,
     spotsInfoText: 'max. 30 Plätze',
-    notes: 'Jährliches Sommerfest mit Grillen und gemeinsamen Schießen. Familien willkommen.',
+    notes: 'Jährliches Sommerfest mit Grillen und gemeinsamen Schiessen. Familien willkommen.',
   },
   {
     id: 'ausflug-2026-04',
@@ -204,6 +204,6 @@ export const trainings: TrainingItem[] = [
     locationLabel: 'Aussen',
     spotsTotal: 25,
     spotsInfoText: 'max. 25 Plätze',
-    notes: 'Kombinierter Ausflug: Wanderung mit Bogenschießen im Wald. Für alle Altersgruppen.',
+    notes: 'Kombinierter Ausflug: Wanderung mit Bogenschiessen im Wald. Für alle Altersgruppen.',
   },
 ];

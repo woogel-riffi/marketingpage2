@@ -19,7 +19,7 @@ export const clubInfo: ClubInfo = {
   },
   serviceArea: 'Bezirk Affoltern (ZH)',
   email: 'info@pfeil-bogen.ch',
-  geoKeyword: 'Bogenschießen in Rifferswil',
+  geoKeyword: 'Bogenschiessen in Rifferswil',
 };
 
 export const vereinContent: VereinContent = {
@@ -29,24 +29,24 @@ export const vereinContent: VereinContent = {
       id: 'verein-geschichte',
       heading: 'Geschichte',
       content:
-        'Pfeil & Bogen ist ein etablierter Bogensportverein im Bezirk Affoltern. Wir bieten Bogenschießen in Rifferswil für Anfänger und Fortgeschrittene an. Unser Verein fördert den Bogensport in der Region und bietet eine Gemeinschaft für alle Altersgruppen.',
+        'Pfeil & Bogen ist ein etablierter Bogensportverein im Bezirk Affoltern. Wir bieten Bogenschiessen in Rifferswil für Anfänger und Fortgeschrittene an. Unser Verein fördert den Bogensport in der Region und bietet eine Gemeinschaft für alle Altersgruppen.',
     },
     {
       id: 'verein-ziele',
       heading: 'Unsere Ziele',
       content:
-        'Wir möchten Bogenschießen in Rifferswil und der gesamten Region zugänglich machen. Unser Ziel ist es, eine inklusive Gemeinschaft zu schaffen, die sowohl Wettkampf- als auch Freizeitsportler willkommen heißt.',
+        'Wir möchten Bogenschiessen in Rifferswil und der gesamten Region zugänglich machen. Unser Ziel ist es, eine inklusive Gemeinschaft zu schaffen, die sowohl Wettkampf- als auch Freizeitsportler willkommen heisst.',
     },
     {
       id: 'verein-ausstattung',
       heading: 'Ausstattung',
       content:
-        'Unser Verein verfügt über eine moderne Schießanlage mit verschiedenen Distanzen. Die Anlage ist für alle Bogenarten geeignet und bietet optimale Bedingungen für Training und Wettkämpfe.',
+        'Unser Verein verfügt über eine moderne Schiessanlage mit verschiedenen Distanzen. Die Anlage ist für alle Bogenarten geeignet und bietet optimale Bedingungen für Training und Wettkämpfe.',
     },
   ],
   amenities: [
-    'Schießanlage mit verschiedenen Distanzen',
-    'Überdachte Schießstände',
+    'Schiessanlage mit verschiedenen Distanzen',
+    'Überdachte Schiessstände',
     'Ausleihbögen für Anfänger',
     'Parkplätze',
     'Sanitäre Anlagen',
@@ -56,13 +56,13 @@ export const vereinContent: VereinContent = {
 export const trainingContent: TrainingContent = {
   title: 'Training',
   intro:
-    'Unser Training findet regelmäßig statt und ist für alle Leistungsniveaus geeignet. Bogenschießen in Rifferswil bietet optimale Bedingungen für Ihr Training.',
+    'Unser Training findet regelmässig statt und ist für alle Leistungsniveaus geeignet. Bogenschiessen in Rifferswil bietet optimale Bedingungen für Ihr Training.',
   events: [
     {
       id: 'training-mittwoch',
       day: 'Mittwoch',
       time: '18:00 - 20:00',
-      location: 'Schießanlage Rifferswil',
+      location: 'Schiessanlage Rifferswil',
       description: 'Wöchentliches Training für alle Mitglieder',
       level: 'Alle Niveaus',
     },
@@ -70,7 +70,7 @@ export const trainingContent: TrainingContent = {
       id: 'training-samstag',
       day: 'Samstag',
       time: '10:00 - 12:00',
-      location: 'Schießanlage Rifferswil',
+      location: 'Schiessanlage Rifferswil',
       description: 'Wöchentliches Training für alle Mitglieder',
       level: 'Alle Niveaus',
     },
@@ -78,7 +78,7 @@ export const trainingContent: TrainingContent = {
       id: 'training-anfaenger',
       day: 'Donnerstag',
       time: '19:00 - 20:30',
-      location: 'Schießanlage Rifferswil',
+      location: 'Schiessanlage Rifferswil',
       description: 'Spezielles Anfängertraining mit Leihbögen',
       level: 'Anfänger',
     },
@@ -89,7 +89,7 @@ export const trainingContent: TrainingContent = {
 export const preiseContent: PreiseContent = {
   title: 'Preise',
   intro:
-    'Transparente Preise für Bogenschießen in Rifferswil. Wir bieten flexible Mitgliedschaftsmodelle für alle Interessierten.',
+    'Transparente Preise für Bogenschiessen in Rifferswil. Wir bieten flexible Mitgliedschaftsmodelle für alle Interessierten.',
   prices: [
     {
       id: 'preis-jahresmitgliedschaft',

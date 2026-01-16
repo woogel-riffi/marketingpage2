@@ -5,13 +5,13 @@ import Section from '@/components/ui/Section';
 import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
-  title: 'Pfeil & Bogen - Bogenschießen in Rifferswil',
+  title: 'Pfeil & Bogen - Bogenschiessen in Rifferswil',
   description:
-    'Bogenschießen in Rifferswil erleben. Pfeil & Bogen bietet professionelles Training, moderne Anlagen und eine aktive Gemeinschaft für Bogensportbegeisterte im Bezirk Affoltern.',
+    'Bogenschiessen in Rifferswil erleben. Pfeil & Bogen bietet professionelles Training, moderne Anlagen und eine aktive Gemeinschaft für Bogensportbegeisterte im Bezirk Affoltern.',
   openGraph: {
-    title: 'Pfeil & Bogen - Bogenschießen in Rifferswil',
+    title: 'Pfeil & Bogen - Bogenschiessen in Rifferswil',
     description:
-      'Bogenschießen in Rifferswil erleben. Professionelles Training und moderne Anlagen.',
+      'Bogenschiessen in Rifferswil erleben. Professionelles Training und moderne Anlagen.',
     type: 'website',
     locale: 'de_CH',
     siteName: 'Pfeil & Bogen',
@@ -31,12 +31,12 @@ export default function HomePage() {
       <Section id="ueberblick" className="bg-gradient-to-b from-white to-gray-50">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary-black">
-            Pfeil & Bogen – Bogenschießen in Rifferswil
+            Pfeil & Bogen – Bogenschiessen in Rifferswil
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Unser Verein bietet Bogenschießen in Rifferswil für Anfänger und Fortgeschrittene. 
-            Wir führen regelmäßige Trainings durch und bieten verschiedene Kursformate wie Einführungskurse, 
-            Kinderkurse und freies Training an. Unsere Schießanlage befindet sich im Bezirk Affoltern 
+            Unser Verein bietet Bogenschiessen in Rifferswil für Anfänger und Fortgeschrittene. 
+            Wir führen regelmässige Trainings durch und bieten verschiedene Kursformate wie Einführungskurse, 
+            Kinderkurse und freies Training an. Unsere Schiessanlage befindet sich im Bezirk Affoltern 
             und steht allen Interessierten offen.
           </p>
           <p className="text-lg text-gray-600 mb-8">
@@ -53,18 +53,18 @@ export default function HomePage() {
 
       <Section id="spiel" className="bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-center">Bogenschieß-Spiel</h2>
+          <h2 className="text-4xl font-bold mb-4 text-center">Bogenschiess-Spiel</h2>
           <p className="text-lg text-gray-700 mb-6 text-center max-w-2xl mx-auto">
-            Probieren Sie unser interaktives Bogenschieß-Spiel aus und testen Sie Ihre Fähigkeiten.
+            Probieren Sie unser interaktives Bogenschiess-Spiel aus und testen Sie Ihre Fähigkeiten.
           </p>
           <div className="relative w-full aspect-video">
             <iframe
               src={LOVABLE_GAME_URL}
-              title="Bogenschieß-Spiel - Interaktives Bogenschießen"
+              title="Bogenschiess-Spiel - Interaktives Bogenschiessen"
               className="w-full h-full border-0 rounded-lg shadow-lg"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              aria-label="Interaktives Bogenschieß-Spiel"
+              aria-label="Interaktives Bogenschiess-Spiel"
             />
           </div>
           <div className="mt-4 text-center">

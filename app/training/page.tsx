@@ -8,10 +8,10 @@ import StructuredData from '@/components/StructuredData';
 export const metadata: Metadata = {
   title: 'Training - Pfeil & Bogen',
   description:
-    'Trainingszeiten und -angebote für Bogenschießen in Rifferswil. Regelmäßige Trainings für alle Leistungsniveaus.',
+    'Trainingszeiten und -angebote für Bogenschiessen in Rifferswil. Regelmässige Trainings für alle Leistungsniveaus.',
   openGraph: {
     title: 'Training - Pfeil & Bogen',
-    description: 'Trainingszeiten und -angebote für Bogenschießen in Rifferswil. Regelmäßige Trainings für alle Leistungsniveaus.',
+    description: 'Trainingszeiten und -angebote für Bogenschiessen in Rifferswil. Regelmässige Trainings für alle Leistungsniveaus.',
     type: 'website',
     locale: 'de_CH',
     siteName: 'Pfeil & Bogen',
