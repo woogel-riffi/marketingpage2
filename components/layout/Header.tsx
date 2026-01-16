@@ -13,7 +13,7 @@ export default function Header() {
             aria-label="Zur Startseite"
           >
             <Image
-              src="/images/Pfeil-Bogen Logo.png"
+              src="/images/Pfeil-BogenLogo.png"
               alt={`${clubInfo.name} Logo`}
               width={144}
               height={48}
