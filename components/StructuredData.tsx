@@ -186,7 +186,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
       '@type': 'Person',
       name: member.name,
       jobTitle: member.role,
-      memberOf: {
+      worksFor: {
         '@type': 'Organization',
         name: clubInfo.name,
       },

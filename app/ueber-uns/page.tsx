@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { aboutContent, clubInfo } from '@/content/data';
+import { clubInfo } from '@/content/data';
+import { boardMembers } from '@/content/board';
 import Section from '@/components/ui/Section';
 import Card from '@/components/ui/Card';
 import StructuredData from '@/components/StructuredData';
@@ -22,20 +23,23 @@ export const metadata: Metadata = {
 export default function UeberUnsPage() {
   return (
     <>
-      <StructuredData type="persons" data={{ members: aboutContent.members }} />
+      <StructuredData type="persons" data={{ members: boardMembers }} />
       
       <Section id="ueber-uns-hero" className="bg-white pt-12">
         <div className="text-center mb-12">
-          <h1>{aboutContent.title}</h1>
+          <h1>Über uns</h1>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            {aboutContent.intro}
+            Pfeil & Bogen ist ein Bogensportverein, der sich durch das Engagement 
+            ehrenamtlicher Mitglieder auszeichnet. Unser Verein lebt von der 
+            freiwilligen Mitarbeit und dem Einsatz unserer Mitglieder, die sich 
+            für die Förderung des Bogensports in Rifferswil einsetzen.
           </p>
         </div>
       </Section>
 
       <Section id="ueber-uns-vorstand" className="bg-gray-50">
-        <div className="grid md:grid-cols-2 gap-8">
-          {aboutContent.members.map((member) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {boardMembers.map((member) => (
             <Card key={member.id} id={member.id}>
               <div className="relative w-full h-64 mb-4 bg-gray-200 rounded-lg overflow-hidden">
                 <Image
@@ -43,7 +47,7 @@ export default function UeberUnsPage() {
                   alt={`${member.name} - ${member.role}`}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <h2 className="text-2xl font-bold mb-2 text-primary-green">
