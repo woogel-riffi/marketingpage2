@@ -60,9 +60,8 @@ export default function HomePage() {
       <Section id="spiel" className="bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-4 text-[#73985a]">Bogenschiess-Spiel</h2>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Probieren Sie unser interaktives Bogenschiess-Spiel aus und testen Sie Ihre Fähigkeiten.
+              Probier doch gleich mal aus wie gut du bist! Wenn du alle 8 Level geschafft hast gibts einen gratis Kafi im Vereinslokal, wo du direkt deine Mitgliedschaft abschliessen kannst ;-).
             </p>
           </div>
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-2 border-gray-300">
