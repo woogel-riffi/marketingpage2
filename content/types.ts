@@ -32,7 +32,27 @@ export interface BoardMember {
   id: string;
   name: string;
   role: string;
+  imagePath: string;
   description?: string;
+}
+
+export type TrainingCategory = 
+  | 'Einführungskurs'
+  | 'Kinderkurse'
+  | 'Freies Training'
+  | 'Vereinsausflüge';
+
+export interface TrainingItem {
+  id: string;
+  title: string;
+  category: TrainingCategory;
+  startDate: string; // ISO date string
+  startTime: string;
+  endTime?: string;
+  locationLabel?: string; // "Innen", "Aussen", etc.
+  spotsTotal: number;
+  spotsInfoText: string; // e.g., "max. 12 Plätze"
+  notes?: string;
 }
 
 export interface PageMetadata {
