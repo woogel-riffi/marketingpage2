@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_CH',
     siteName: 'Pfeil & Bogen',
+    url: 'https://www.pfeil-bogen.ch',
   },
   alternates: {
     canonical: 'https://www.pfeil-bogen.ch',

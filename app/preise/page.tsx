@@ -12,8 +12,11 @@ export const metadata: Metadata = {
     'Transparente Preise für Bogenschießen in Rifferswil. Mitgliedschaften, Kurse und Ausrüstungsmiete.',
   openGraph: {
     title: 'Preise - Pfeil & Bogen',
-    description: 'Transparente Preise für Bogenschießen in Rifferswil.',
+    description: 'Transparente Preise für Bogenschießen in Rifferswil. Mitgliedschaften, Kurse und Ausrüstungsmiete.',
     type: 'website',
+    locale: 'de_CH',
+    siteName: 'Pfeil & Bogen',
+    url: 'https://www.pfeil-bogen.ch/preise',
   },
   alternates: {
     canonical: 'https://www.pfeil-bogen.ch/preise',

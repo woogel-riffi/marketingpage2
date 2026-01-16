@@ -12,8 +12,11 @@ export const metadata: Metadata = {
     'Lernen Sie das Team von Pfeil & Bogen kennen. Unser Vorstand setzt sich für Bogenschießen in Rifferswil ein.',
   openGraph: {
     title: 'Über uns - Pfeil & Bogen',
-    description: 'Lernen Sie das Team von Pfeil & Bogen kennen.',
+    description: 'Lernen Sie das Team von Pfeil & Bogen kennen. Unser Vorstand setzt sich für Bogenschießen in Rifferswil ein.',
     type: 'website',
+    locale: 'de_CH',
+    siteName: 'Pfeil & Bogen',
+    url: 'https://www.pfeil-bogen.ch/ueber-uns',
   },
   alternates: {
     canonical: 'https://www.pfeil-bogen.ch/ueber-uns',

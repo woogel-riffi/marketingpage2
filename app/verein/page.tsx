@@ -10,8 +10,11 @@ export const metadata: Metadata = {
     'Erfahren Sie mehr über unseren Verein, unsere Anlagen und Einrichtungen. Bogenschießen in Rifferswil mit modernen Anlagen.',
   openGraph: {
     title: 'Verein Pfeil & Bogen',
-    description: 'Erfahren Sie mehr über unseren Verein und unsere Anlagen.',
+    description: 'Erfahren Sie mehr über unseren Verein, unsere Anlagen und Einrichtungen. Bogenschießen in Rifferswil mit modernen Anlagen.',
     type: 'website',
+    locale: 'de_CH',
+    siteName: 'Pfeil & Bogen',
+    url: 'https://www.pfeil-bogen.ch/verein',
   },
   alternates: {
     canonical: 'https://www.pfeil-bogen.ch/verein',

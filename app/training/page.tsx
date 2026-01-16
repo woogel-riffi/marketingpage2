@@ -11,8 +11,11 @@ export const metadata: Metadata = {
     'Trainingszeiten und -angebote für Bogenschießen in Rifferswil. Regelmäßige Trainings für alle Leistungsniveaus.',
   openGraph: {
     title: 'Training - Pfeil & Bogen',
-    description: 'Trainingszeiten und -angebote für Bogenschießen in Rifferswil.',
+    description: 'Trainingszeiten und -angebote für Bogenschießen in Rifferswil. Regelmäßige Trainings für alle Leistungsniveaus.',
     type: 'website',
+    locale: 'de_CH',
+    siteName: 'Pfeil & Bogen',
+    url: 'https://www.pfeil-bogen.ch/training',
   },
   alternates: {
     canonical: 'https://www.pfeil-bogen.ch/training',
