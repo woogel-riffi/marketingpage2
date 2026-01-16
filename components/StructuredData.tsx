@@ -18,6 +18,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: clubInfo.name,
+    url: baseUrl,
     address: {
       '@type': 'PostalAddress',
       streetAddress: clubInfo.address.street,
@@ -27,16 +28,17 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
     },
     areaServed: {
       '@type': 'City',
-      name: clubInfo.serviceArea,
+      name: 'Bezirk Affoltern',
     },
-    url: baseUrl,
     email: clubInfo.email,
+    sameAs: [],
   });
 
   const getSportsActivitySchema = () => ({
     '@context': 'https://schema.org',
     '@type': 'SportsActivityLocation',
     name: clubInfo.name,
+    url: baseUrl,
     address: {
       '@type': 'PostalAddress',
       streetAddress: clubInfo.address.street,
@@ -44,6 +46,13 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
       postalCode: clubInfo.address.postalCode,
       addressCountry: clubInfo.address.country,
     },
+    areaServed: {
+      '@type': 'City',
+      name: 'Bezirk Affoltern',
+    },
+    sport: 'Archery',
+    email: clubInfo.email,
+    sameAs: [],
     ...(data?.amenities && {
       amenityFeature: data.amenities.map((amenity) => ({
         '@type': 'LocationFeatureSpecification',
