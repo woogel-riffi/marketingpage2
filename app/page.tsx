@@ -31,7 +31,7 @@ export default function HomePage() {
       <Section id="ueberblick" className="bg-gradient-to-b from-white to-gray-50">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary-black">
-            Pfeil & Bogen – Bogenschiessen in Rifferswil
+            Pfeil & Bogen
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
             Unser Verein bietet Bogenschiessen in Rifferswil für Anfänger und Fortgeschrittene. 
