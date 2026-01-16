@@ -15,9 +15,9 @@ export default function Header() {
             <Image
               src="/images/Pfeil-Bogen Logo.png"
               alt={`${clubInfo.name} Logo`}
-              width={120}
-              height={40}
-              className="h-10 w-auto"
+              width={144}
+              height={48}
+              className="h-12 w-auto"
               priority
             />
           </Link>
