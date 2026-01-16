@@ -8,14 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        pastel: {
-          pink: '#FFD1DC',
-          blue: '#B5E5CF',
-          purple: '#E6D5F7',
-          yellow: '#FFF9C4',
-          green: '#C8E6C9',
-          orange: '#FFE0B2',
+        primary: {
+          black: '#000000',
+          gold: '#D4AF37',
+          green: '#2D5016',
         },
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
     },
   },
