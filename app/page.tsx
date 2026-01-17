@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { clubInfo } from '@/content/data';
 import { LOVABLE_GAME_URL } from '@/content/site';
 import Section from '@/components/ui/Section';
@@ -36,9 +37,16 @@ export default function HomePage() {
           }}
         ></div>
         <div className="text-center max-w-4xl mx-auto relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
-            Pfeil & Bogen
-          </h1>
+          <div className="mb-6 flex justify-center">
+            <Image
+              src="/images/Pfeil-Bogen Logo Text.png"
+              alt="Pfeil & Bogen Logo"
+              width={600}
+              height={200}
+              className="w-auto h-20 md:h-24 drop-shadow-lg"
+              priority
+            />
+          </div>
           <p className="text-xl md:text-2xl text-white/95 mb-8 leading-relaxed">
             Unser Verein bietet Bogenschiessen in Rifferswil für Anfänger und Fortgeschrittene. 
             Wir führen regelmässige Trainings durch und bieten verschiedene Kursformate wie Einführungskurse, 
