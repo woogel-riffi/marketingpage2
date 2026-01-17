@@ -65,37 +65,6 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section id="spiel" className="bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8">
-            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Probier doch gleich mal aus wie gut du bist! Wenn du alle 8 Level geschafft hast gibts einen gratis Kafi im Vereinslokal, wo du direkt deine Mitgliedschaft abschliessen kannst ;-).
-            </p>
-          </div>
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-2 border-gray-300">
-            <iframe
-              src={LOVABLE_GAME_URL}
-              title="Bogenschiess-Spiel - Interaktives Bogenschiessen"
-              className="w-full h-full border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              aria-label="Interaktives Bogenschiess-Spiel"
-            />
-          </div>
-          <div className="mt-6 text-center">
-            <a
-              href={LOVABLE_GAME_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-primary-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 shadow-md"
-              aria-label="Spiel in neuem Tab öffnen"
-            >
-              Spiel öffnen
-            </a>
-          </div>
-        </div>
-      </Section>
-
       <Section id="kurzinfos" className="bg-gradient-to-br from-[#2D5016]/10 via-white to-[#2D5016]/10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -123,6 +92,37 @@ export default function HomePage() {
                 Einführungskurse, Kinderkurse, Freies Training, Vereinsausflüge
               </p>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section id="spiel" className="bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-8">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+              Probier doch gleich mal aus wie gut du bist! Wenn du alle 8 Level geschafft hast gibts einen gratis Kafi im Vereinslokal, wo du direkt deine Mitgliedschaft abschliessen kannst ;-).
+            </p>
+          </div>
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-2 border-gray-300">
+            <iframe
+              src={LOVABLE_GAME_URL}
+              title="Bogenschiess-Spiel - Interaktives Bogenschiessen"
+              className="w-full h-full border-0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              aria-label="Interaktives Bogenschiess-Spiel"
+            />
+          </div>
+          <div className="mt-6 text-center">
+            <a
+              href={LOVABLE_GAME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-primary-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 shadow-md"
+              aria-label="Spiel in neuem Tab öffnen"
+            >
+              Spiel öffnen
+            </a>
           </div>
         </div>
       </Section>
