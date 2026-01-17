@@ -32,7 +32,7 @@ export default function PreisePage() {
     <>
       <StructuredData type="offers" data={{ prices }} />
       
-      <Section id="preise-hero" className="bg-[#73985a] text-white pt-12 relative overflow-hidden">
+      <Section id="preise-hero" className="bg-[#2D5016] text-white pt-12 relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -49,7 +49,7 @@ export default function PreisePage() {
       <Section id="preise-mitgliedschaft" className="bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4 text-[#73985a]">Mitgliedschaft</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[#2D5016]">Mitgliedschaft</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {membershipPrices.map((price) => (
@@ -58,7 +58,7 @@ export default function PreisePage() {
                   {price.category}
                 </h3>
                 <div className="mb-3">
-                  <span className="text-3xl font-bold text-[#73985a]">
+                  <span className="text-3xl font-bold text-[#2D5016]">
                     {price.amount} CHF
                   </span>
                   <span className="text-gray-600 ml-2">/Jahr</span>
@@ -73,7 +73,7 @@ export default function PreisePage() {
       <Section id="preise-kurse" className="bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4 text-[#73985a]">Kurse</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[#2D5016]">Kurse</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {coursePrices.map((price) => (
@@ -83,12 +83,12 @@ export default function PreisePage() {
                 </h3>
                 <div className="mb-3">
                   {price.amount === 0 ? (
-                    <span className="text-2xl font-bold text-[#73985a]">
+                    <span className="text-2xl font-bold text-[#2D5016]">
                       Gratis
                     </span>
                   ) : (
                     <>
-                      <span className="text-3xl font-bold text-[#73985a]">
+                      <span className="text-3xl font-bold text-[#2D5016]">
                         {price.amount} CHF
                       </span>
                       <span className="text-gray-600 ml-2">/Semester</span>
@@ -105,7 +105,7 @@ export default function PreisePage() {
       <Section id="preise-ausruestung" className="bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4 text-[#73985a]">Ausrüstung mieten</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[#2D5016]">Ausrüstung mieten</h2>
           </div>
           {equipmentPrice && (
             <Card id={equipmentPrice.id}>
@@ -113,7 +113,7 @@ export default function PreisePage() {
                 {equipmentPrice.category}
               </h3>
               <div className="mb-3">
-                <span className="text-3xl font-bold text-[#73985a]">
+                <span className="text-3xl font-bold text-[#2D5016]">
                   CHF
                 </span>
                 <span className="text-gray-600 ml-2">/Jahr</span>
@@ -124,7 +124,7 @@ export default function PreisePage() {
         </div>
       </Section>
 
-      <Section id="preise-footer" className="bg-[#73985a] text-white">
+      <Section id="preise-footer" className="bg-[#2D5016] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm text-white/80 mb-6">
             Stand: {pricesLastUpdated}

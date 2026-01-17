@@ -48,7 +48,7 @@ export default function TrainingPage() {
     <>
       <StructuredData type="events" data={{ trainingItems: trainings }} />
       
-      <Section id="training-hero" className="bg-[#73985a] text-white pt-12 relative overflow-hidden">
+      <Section id="training-hero" className="bg-[#2D5016] text-white pt-12 relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -62,7 +62,7 @@ export default function TrainingPage() {
               Um an unseren Trainings teilzunehmen, melden Sie sich bitte per E-Mail an. 
               Wir bieten verschiedene Trainingsformate für alle Altersgruppen und Leistungsniveaus.
             </p>
-            <p className="font-semibold text-white bg-primary-gold/20 px-4 py-2 rounded-lg inline-block">
+            <p className="font-semibold text-white bg-black/20 px-4 py-2 rounded-lg inline-block">
               Bitte beachten Sie: Die Termine sind festgelegt und können nicht verschoben werden.
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function TrainingPage() {
         <div className="space-y-12">
           {trainingsByCategory.map(({ category, items }, index) => (
             <div key={category}>
-              <h2 className="text-3xl font-bold mb-6 text-[#73985a]">
+              <h2 className="text-3xl font-bold mb-6 text-[#2D5016]">
                 {category}
               </h2>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -104,7 +104,7 @@ export default function TrainingPage() {
                             {training.notes}
                           </p>
                         )}
-                        <p className="text-sm text-[#73985a] font-semibold">
+                        <p className="text-sm text-[#2D5016] font-semibold">
                           Anmeldung per E-Mail
                         </p>
                       </div>

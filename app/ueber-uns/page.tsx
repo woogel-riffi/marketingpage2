@@ -28,7 +28,7 @@ export default function UeberUnsPage() {
     <>
       <StructuredData type="persons" data={{ members: boardMembers }} />
       
-      <Section id="ueber-uns-hero" className="bg-[#73985a] text-white pt-12 relative overflow-hidden">
+      <Section id="ueber-uns-hero" className="bg-[#2D5016] text-white pt-12 relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -59,10 +59,10 @@ export default function UeberUnsPage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
-              <h2 className="text-2xl font-bold mb-2 text-[#73985a]">
+              <h2 className="text-2xl font-bold mb-2 text-[#2D5016]">
                 {member.name}
               </h2>
-              <p className="text-lg text-primary-gold font-semibold mb-4">
+              <p className="text-lg text-[#2D5016] font-semibold mb-4">
                 {member.role}
               </p>
               {member.description && (
@@ -73,9 +73,9 @@ export default function UeberUnsPage() {
         </div>
       </Section>
 
-      <Section id="ueber-uns-info" className="bg-gradient-to-br from-[#73985a]/10 to-[#73985a]/5">
+      <Section id="ueber-uns-info" className="bg-gradient-to-br from-[#2D5016]/10 to-[#2D5016]/5">
         <Card id="ueber-uns-kontakt" className="max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold mb-4 text-[#73985a]">
+          <h2 className="text-2xl font-bold mb-4 text-[#2D5016]">
             Kontakt
           </h2>
           <p className="text-gray-700 mb-4">
@@ -86,7 +86,7 @@ export default function UeberUnsPage() {
             <strong>E-Mail:</strong>{' '}
             <a
               href={`mailto:${clubInfo.email}`}
-              className="text-primary-gold hover:text-yellow-500 underline"
+              className="text-[#2D5016] hover:text-[#1a3a0d] underline"
             >
               {clubInfo.email}
             </a>

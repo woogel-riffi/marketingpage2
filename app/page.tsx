@@ -28,7 +28,7 @@ export default function HomePage() {
       <StructuredData type="organization" />
       <StructuredData type="sportsActivity" />
       
-      <Section id="ueberblick" className="bg-[#73985a] text-white relative overflow-hidden">
+      <Section id="ueberblick" className="bg-[#2D5016] text-white relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -48,7 +48,7 @@ export default function HomePage() {
           <p className="text-lg text-white/90 mb-8">
             <a 
               href={`mailto:${clubInfo.email}`}
-              className="inline-block bg-primary-gold text-primary-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-lg"
+              className="inline-block bg-primary-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg"
               aria-label={`Kontaktieren Sie uns per E-Mail: ${clubInfo.email}`}
             >
               Wir freuen uns über neue Mitglieder
@@ -79,7 +79,7 @@ export default function HomePage() {
               href={LOVABLE_GAME_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#73985a] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#5d7a48] transition-all transform hover:scale-105 shadow-md"
+              className="inline-block bg-primary-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 shadow-md"
               aria-label="Spiel in neuem Tab öffnen"
             >
               Spiel öffnen
@@ -88,29 +88,29 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section id="kurzinfos" className="bg-gradient-to-br from-[#73985a]/10 via-white to-[#73985a]/10">
+      <Section id="kurzinfos" className="bg-gradient-to-br from-[#2D5016]/10 via-white to-[#2D5016]/10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-4 text-[#73985a]">Kurzinfos</h2>
+            <h2 className="text-4xl font-bold mb-4 text-[#2D5016]">Kurzinfos</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#73985a] transform hover:scale-105 transition-transform">
+            <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#2D5016] transform hover:scale-105 transition-transform">
               <div className="text-3xl mb-3">📍</div>
-              <h3 className="font-bold text-[#73985a] mb-2">Standort</h3>
+              <h3 className="font-bold text-[#2D5016] mb-2">Standort</h3>
               <p className="text-gray-700">
                 {clubInfo.address.city}, {clubInfo.serviceArea}
               </p>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#73985a] transform hover:scale-105 transition-transform">
+            <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#2D5016] transform hover:scale-105 transition-transform">
               <div className="text-3xl mb-3">👥</div>
-              <h3 className="font-bold text-[#73985a] mb-2">Zielgruppe</h3>
+              <h3 className="font-bold text-[#2D5016] mb-2">Zielgruppe</h3>
               <p className="text-gray-700">
                 Alle Altersgruppen, Anfänger und Fortgeschrittene
               </p>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#73985a] transform hover:scale-105 transition-transform">
+            <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#2D5016] transform hover:scale-105 transition-transform">
               <div className="text-3xl mb-3">🎯</div>
-              <h3 className="font-bold text-[#73985a] mb-2">Trainingsarten</h3>
+              <h3 className="font-bold text-[#2D5016] mb-2">Trainingsarten</h3>
               <p className="text-gray-700">
                 Einführungskurse, Kinderkurse, Freies Training, Vereinsausflüge
               </p>
@@ -119,7 +119,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section id="kontakt" className="bg-[#73985a] text-white">
+      <Section id="kontakt" className="bg-[#2D5016] text-white">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-4xl font-bold mb-4 text-white">Kontakt</h2>
           <p className="text-lg text-white/95 mb-8">
@@ -127,7 +127,7 @@ export default function HomePage() {
           </p>
           <a
             href={`mailto:${clubInfo.email}`}
-            className="inline-block bg-primary-gold text-primary-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-lg text-lg"
+            className="inline-block bg-primary-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg text-lg"
             aria-label={`Kontaktieren Sie uns per E-Mail: ${clubInfo.email}`}
           >
             {clubInfo.email}

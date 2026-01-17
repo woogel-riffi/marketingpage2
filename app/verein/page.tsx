@@ -82,7 +82,7 @@ export default function VereinPage() {
         data={{ amenities: facilityNames }}
       />
 
-      <Section id="verein-hero" className="bg-[#73985a] text-white relative overflow-hidden">
+      <Section id="verein-hero" className="bg-[#2D5016] text-white relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -109,7 +109,7 @@ export default function VereinPage() {
               <article
                 key={facility.id}
                 id={facility.id}
-                className="bg-white rounded-lg shadow-lg border-t-4 border-[#73985a] hover:border-[#5d7a48] overflow-hidden transform hover:scale-105 transition-all"
+                className="bg-white rounded-lg shadow-lg border-t-4 border-[#2D5016] hover:border-[#1a3a0d] overflow-hidden transform hover:scale-105 transition-all"
               >
                 <div className="relative w-full h-64 bg-gray-200">
                   <Image
@@ -121,7 +121,7 @@ export default function VereinPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h2 className="text-3xl font-bold mb-4 text-[#73985a]">
+                  <h2 className="text-3xl font-bold mb-4 text-[#2D5016]">
                     {facility.title}
                   </h2>
                   <p className="text-gray-700 leading-relaxed mb-4">
@@ -130,7 +130,7 @@ export default function VereinPage() {
                   <ul className="space-y-2">
                     {facility.highlights.map((highlight, index) => (
                       <li key={index} className="flex items-start">
-                        <span className="text-primary-gold mr-3 font-bold">•</span>
+                        <span className="text-[#2D5016] mr-3 font-bold">•</span>
                         <span className="text-gray-700">{highlight}</span>
                       </li>
                     ))}

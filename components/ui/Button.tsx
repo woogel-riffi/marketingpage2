@@ -23,11 +23,11 @@ export default function Button({
   
   const variants = {
     primary:
-      'bg-primary-gold text-primary-black hover:bg-yellow-500 focus:ring-primary-gold',
+      'bg-primary-black text-white hover:bg-gray-800 focus:ring-primary-black',
     secondary:
-      'bg-primary-green text-white hover:bg-green-700 focus:ring-primary-green',
+      'bg-[#2D5016] text-white hover:bg-[#1a3a0d] focus:ring-[#2D5016]',
     outline:
-      'border-2 border-primary-gold text-primary-gold hover:bg-primary-gold hover:text-primary-black focus:ring-primary-gold',
+      'border-2 border-primary-black text-primary-black hover:bg-primary-black hover:text-white focus:ring-primary-black',
   };
 
   const combinedClassName = `${baseStyles} ${variants[variant]} ${className}`;
