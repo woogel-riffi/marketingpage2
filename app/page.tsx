@@ -82,7 +82,7 @@ export default function HomePage() {
               <div className="text-3xl mb-3">👥</div>
               <h3 className="font-bold text-[#2D5016] mb-2">Zielgruppe</h3>
               <p className="text-gray-700">
-                Alle Altersgruppen, Anfänger und Fortgeschrittene
+                Erwachsene und Kinder ab 6 Jahren, Anfänger und Fortgeschrittene
               </p>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#2D5016] transform hover:scale-105 transition-transform">
@@ -103,6 +103,8 @@ export default function HomePage() {
               Wenn du das nächste Training nicht erwarten kannst, dann spiele hier online. Wenn du alle acht Level geschafft hast gibts einen gratis Kafi im Vereinslokal.
               <br /><br />
               Anleitung: Bogen in Schussrichtung aufziehen, dann Pfeilwinkel wählen (nach oben/unten ziehen).
+              <br /><br />
+              Du kannst das Spiel <a href={LOVABLE_GAME_URL} target="_blank" rel="noopener noreferrer" className="text-[#2D5016] underline font-medium hover:no-underline">hier</a> in einem eigenen Fenster öffnen. Spiele am besten im Querformat.
             </p>
           </div>
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-2 border-gray-300">
@@ -114,17 +116,6 @@ export default function HomePage() {
               allowFullScreen
               aria-label="Interaktives Bogenschiess-Spiel"
             />
-          </div>
-          <div className="mt-6 text-center">
-            <a
-              href={LOVABLE_GAME_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-primary-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 shadow-md"
-              aria-label="Spiel in neuem Tab öffnen"
-            >
-              Spiel öffnen
-            </a>
           </div>
         </div>
       </Section>
