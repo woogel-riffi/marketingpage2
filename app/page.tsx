@@ -43,7 +43,7 @@ export default function HomePage() {
               alt="Pfeil & Bogen Logo"
               width={600}
               height={200}
-              className="w-auto h-20 md:h-24 drop-shadow-lg"
+              className="w-[330px] h-[200px] drop-shadow-lg"
               priority
             />
           </div>
