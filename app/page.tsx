@@ -99,8 +99,10 @@ export default function HomePage() {
       <Section id="spiel" className="bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8">
-            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Probier doch gleich mal aus wie gut du bist! Wenn du alle 8 Level geschafft hast gibts einen gratis Kafi im Vereinslokal, wo du direkt deine Mitgliedschaft abschliessen kannst ;-).
+            <p className="text-xl md:text-2xl text-gray-700 mb-6 max-w-2xl mx-auto leading-relaxed">
+              Wenn du das nächste Training nicht erwarten kannst, dann spiele hier online. Wenn du alle acht Level geschafft hast gibts einen gratis Kafi im Vereinslokal.
+              <br /><br />
+              Anleitung: Bogen in Schussrichtung aufziehen, dann Pfeilwinkel wählen (nach oben/unten ziehen).
             </p>
           </div>
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-2 border-gray-300">
