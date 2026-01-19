@@ -102,9 +102,7 @@ export default function HomePage() {
             <p className="text-xl md:text-2xl text-gray-700 mb-6 w-full leading-relaxed">
               Du kannst das nächste Training nicht erwarten? Dann spiele hier online. Wenn du alle acht Level geschafft hast gibts einen gratis Kafi im Vereinslokal.
               <br /><br />
-              Anleitung: Bogen in Schussrichtung aufziehen, dann Pfeilwinkel wählen (nach oben/unten ziehen).
-              <br /><br />
-              Du kannst das Spiel <a href={LOVABLE_GAME_URL} target="_blank" rel="noopener noreferrer" className="text-[#2D5016] underline font-medium hover:no-underline">hier</a> in einem eigenen Fenster öffnen. Spiele am besten im Querformat.
+              Anleitung: Bogen in Schussrichtung aufziehen, dann Pfeilwinkel wählen (nach oben/unten ziehen). Du kannst das Spiel <a href={LOVABLE_GAME_URL} target="_blank" rel="noopener noreferrer" className="text-[#2D5016] underline font-medium hover:no-underline">hier</a> in einem eigenen Fenster öffnen. Spiele auf Mobilgeräten am besten im Querformat.
             </p>
           </div>
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-2 border-gray-300">
