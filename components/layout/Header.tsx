@@ -107,6 +107,15 @@ export default function Header() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-black group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
+            <li>
+              <Link
+                href="/faq"
+                className="text-primary-black hover:text-gray-700 font-semibold transition-colors relative group"
+              >
+                FAQ
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-black group-hover:w-full transition-all duration-300"></span>
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -157,6 +166,15 @@ export default function Header() {
                   onClick={closeMenu}
                 >
                   Über uns
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/faq"
+                  className="block text-primary-black hover:text-gray-700 font-semibold transition-colors py-2"
+                  onClick={closeMenu}
+                >
+                  FAQ
                 </Link>
               </li>
             </ul>

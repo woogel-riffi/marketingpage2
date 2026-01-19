@@ -37,7 +37,7 @@ export const prices: Price[] = [
   {
     id: 'preis-ausruestung-miete',
     category: 'Ausrüstung mieten',
-    amount: 0, // Editable - set actual value
+    amount: 50,
     period: 'pro Jahr',
     description: 'Jahresmiete für Bogenausrüstung.',
   },
