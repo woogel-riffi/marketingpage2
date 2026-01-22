@@ -4,17 +4,17 @@ Website für den Bogensportverein Pfeil & Bogen in Hausen am Albis.
 
 ## Projektbeschreibung und Zielsetzung
 
-Dieses Projekt umfasst die Entwicklung einer modernen, SEO/GEO-optimierten Marketing-Website für den Bogensportverein "Pfeil & Bogen" im Bezirk Affoltern. Die Website dient als zentrale Informationsplattform für Interessierte und Mitglieder und soll die Sichtbarkeit des Vereins im lokalen Raum erhöhen.
+Dieses Projekt umfasst die Entwicklung einer modernen, SEO/GEO-optimierten Marketing-Website für den Bogensportverein "Pfeil & Bogen" im Bezirk Affoltern. Die Website dient als zentrale Informationsplattform für Interessierte und Mitglieder und soll die Sichtbarkeit des Vereins im lokalen Raum erhöhen. Sie enthält ausserdem ein Bogenschiessen Spiel, welches der Gamification und der Verbindung der digitalen und analogen Welt dient.
 
 ### Hauptziele:
 
 1. **Lokale Sichtbarkeit**: Optimierung für lokale Suchanfragen wie "Bogenschiessen in Rifferswil" und "Bogensport Bezirk Affoltern"
-2. **Informationsvermittlung**: Klare Darstellung von Trainingszeiten, Preisen, Vereinsinformationen und Kontaktmöglichkeiten
+2. **Information & Unterhaltung**: Klare Darstellung von Trainingszeiten, Preisen, Vereinsinformationen und Kontaktmöglichkeiten sowie dem Game als Unterhaltung
 3. **SEO-Optimierung**: Implementierung von Schema.org Structured Data für bessere Auffindbarkeit in Suchmaschinen
 4. **Moderne Technologie**: Nutzung aktueller Web-Technologien (Next.js 14, TypeScript) für Performance und Wartbarkeit
 5. **Benutzerfreundlichkeit**: Responsive Design für alle Geräte und klare Navigation
 
-Die Website umfasst fünf Hauptseiten: Landing Page, Verein, Training, Preise und Über uns, sowie eine FAQ-Sektion. Besonderes Augenmerk wurde auf die Integration von strukturierten Daten (JSON-LD) gelegt, um die Auffindbarkeit in Suchmaschinen zu maximieren. Anstelle von Bildern wurden Platzhalter verwendet
+Die Website umfasst fünf Hauptseiten: Landing Page, Verein, Training, Preise und Über uns, sowie eine FAQ-Sektion. Anstelle von Bildern wurden Platzhalter verwendet
 
 ## Dokumentation der wichtigsten Prompts
 
@@ -24,39 +24,34 @@ Im Folgenden sind die wichtigsten Prompts dokumentiert, die während der Entwick
 
 **Prompt**: "Erstelle eine Next.js Website mit App Router für einen Bogensportverein. Die Website soll SEO/GEO-optimiert sein mit Schema.org Structured Data. Strukturiere das Projekt mit klarer Trennung von Components, Content und Pages."
 
-### 2. Content-Daten (Training/Preise/Vorstand) als Code-Strukturen
+#### 2. Content-Daten (Training/Preise/Vorstand) als Code-Strukturen
 
-### 3. Landingpage mit Lovable-Spiel (iframe + GEO)
+#### 3. Landingpage mit Lovable-Spiel (iframe + GEO)
 
-### 4. Seite “Verein” (Räumlichkeiten) mit strukturierter Darstellung
+#### 4. Content Prompt für jede Seite 
 
-### 5. Seite “Training” (Kategorien + Daten + Event Schema)
+#### 6. Meta Tags und Open Graph
 
-### 6. Meta Tags und Open Graph
-
-### 7. Seite “Preise” (Offers + CHF + Stand)
-
-### 8. Seite “Über uns” (Vorstand 4 Personen + Person Schema)
-
-### 9. SEO/GEO Infrastruktur (robots/sitemap/metadata)
+#### 9. SEO/GEO Infrastruktur (robots/sitemap/metadata)
 
 ## Beschreibung des Entwicklungsprozesses
 
-Mit Hilfe von ChatGPT wurden 9 individuelle Prompts erstellt. Bei Cursor eingegeben erschien darauf eine funktionierende Webseite, die ich gar nicht mehr gross ändern musste. 
+### Für die Webseite: 
+Mit Hilfe von ChatGPT wurden 8 individuelle Prompts erstellt. Bei Cursor eingegeben erschien darauf eine funktionierende Webseite, die ich gar nicht mehr gross ändern musste. Das Fine-tuning betraf hauptsächlich das Erscheinungsbild, Layout, Wording, etc. Dies ist in Curser nicht optimal, da immer publiziert werden muss bevor das Ergebnis erscheint.
 
-Das Fine-tuning betraf hauptsächlich das Erscheinungsbild, Layout, Wording, etc., das in Curser nicht ganz optimal ist, da immer publiziert werden muss bevor das Ergebnis erscheint.
+### Für die App
 
 
 **Aha-Moment 1: Super, solange es funktionert**
 
-Ohne entsprechendes Coding Wissen ist es schwierig zu sagen die geschriebenen Zeilen Hand und Fuss haben. Zwar konnte Cursor Fehler selbst beheben wenn sie auftraten, ob der Code sinnvoll geschrieben ist weiss ich allerdings nicht.
+Ohne entsprechendes Coding Wissen ist es schwierig zu sagen die geschriebenen Zeilen Hand und Fuss haben. Zwar konnte Cursor Fehler selbst beheben wenn sie auftraten - ob der Code sinnvoll geschrieben ist weiss ich allerdings nicht.
 
 
 ### Neu gewonnene Learnings 
 
-1. **Perfekt für einfache Websites**: Grundsätzlich ist das Vibe Coden mit Curser super. Kleine Seiten für die sich Wordpress nicht lohnt kann man schnell erstellen, sieht die einzelnen Files sowie die Architektur und kann sie auch editieren. 
+1. **Perfekt für einfache Websites**: Grundsätzlich ist das Vibe Coden mit Curser super. Kleine statische Seiten, für die sich Wordpress nicht lohnt kann man unkompliziert erstellen. Die einzelnen Files und die Architektur sind ersichtlich und editierbar.
 
-2. **ChatGPT prompts**: ChatGPT zu verwenden um Prompts zu generieren scheint Sinn zu machen. Ohne ChatGPT wären meine Prompts nicht so ausführlich ausgefallen.
+2. **ChatGPT prompts**: Ohne ChatGPT wären meine Prompts nicht so ausführlich ausgefallen. Es macht Sinn die Prompts so vorzubereiten bevor man sie bei Cursor eingibt.
 
 3. **Alerts auf Vercel**: Vercel weist daraufhin, wenn der Code Fehler erzeugt. Die Fehlermeldung kann man direkt wieder bei Cursor eingeben und - in meinem Fall - wurden sie behoben.
 
