@@ -4,23 +4,23 @@ Website für den Bogensportverein Pfeil & Bogen in Hausen am Albis.
 
 ## Projektbeschreibung und Zielsetzung
 
-Dieses Projekt umfasst die Entwicklung einer modernen, SEO/GEO-optimierten Marketing-Website für den Bogensportverein "Pfeil & Bogen" im Bezirk Affoltern. Die Website dient als zentrale Informationsplattform für Interessierte und Mitglieder und soll die Sichtbarkeit des Vereins im lokalen Raum erhöhen. Sie enthält ausserdem ein Bogenschiessen Spiel, welches der Gamification und der Verbindung der digitalen und analogen Welt dient.
+Dieses Projekt umfasst die Entwicklung einer modernen, SEO/GEO-optimierten Marketing-Website für den Bogensportverein "Pfeil & Bogen" im Bezirk Affoltern. Die Website dient als Informationsplattform für Interessierte und Mitglieder und soll die Sichtbarkeit des Vereins im lokalen Raum erhöhen. Sie enthält ausserdem ein Bogenschiessen Spiel als Gamification Element und zur Verbindung der digitalen und analogen Welt.
 
 ### Hauptziele:
 
 1. **Lokale Sichtbarkeit**: Optimierung für lokale Suchanfragen wie "Bogenschiessen in Rifferswil" und "Bogensport Bezirk Affoltern"
-2. **Information & Unterhaltung**: Klare Darstellung von Trainingszeiten, Preisen, Vereinsinformationen und Kontaktmöglichkeiten sowie dem Game als Unterhaltung
+2. **Information & Unterhaltung**: Klare Darstellung von Trainingszeiten, Preisen, Vereinsinformationen und Kontaktmöglichkeiten sowie dem Game als Unterhaltung und Call to Action für einen Vereinsbesuch
 3. **SEO-Optimierung**: Implementierung von Schema.org Structured Data für bessere Auffindbarkeit in Suchmaschinen
 4. **Moderne Technologie**: Nutzung aktueller Web-Technologien (Next.js 14, TypeScript) für Performance und Wartbarkeit
 5. **Benutzerfreundlichkeit**: Responsive Design für alle Geräte und klare Navigation
 
 Die Website umfasst fünf Hauptseiten: Landing Page, Verein, Training, Preise und Über uns, sowie eine FAQ-Sektion. Anstelle von Bildern wurden Platzhalter verwendet
 
-## Dokumentation der wichtigsten Prompts
+## Dokumentation der wichtigsten Prompts der Webseite
 
-Im Folgenden sind die wichtigsten Prompts dokumentiert, die während der Entwicklung verwendet wurden: (erstellt von ChatGPT, die ganzen Prompts sind etwas lang, daher hier nur die Header)
+Im Folgenden sind die Header der wichtigsten Prompts dokumentiert, die während der Entwicklung verwendet wurden (die Prompts selbst sind zu lang): 
 
-### 1. Initiale Projektstruktur
+#### 1. Initiale Projektstruktur der Webseite
 
 **Prompt**: "Erstelle eine Next.js Website mit App Router für einen Bogensportverein. Die Website soll SEO/GEO-optimiert sein mit Schema.org Structured Data. Strukturiere das Projekt mit klarer Trennung von Components, Content und Pages."
 
@@ -30,35 +30,49 @@ Im Folgenden sind die wichtigsten Prompts dokumentiert, die während der Entwick
 
 #### 4. Content Prompt für jede Seite 
 
-#### 6. Meta Tags und Open Graph
+#### 5. Meta Tags und Open Graph
 
-#### 9. SEO/GEO Infrastruktur (robots/sitemap/metadata)
+#### 6. SEO/GEO Infrastruktur (robots/sitemap/metadata)
 
-## Beschreibung des Entwicklungsprozesses
+Mit Hilfe von ChatGPT wurden die individuellen Prompts erstellt. Bei Cursor eingegeben erschien daraufhin eine funktionierende Webseite, die ich gar nicht mehr gross ändern musste. Das Fine-tuning betraf hauptsächlich das Erscheinungsbild, Layout, Wording, etc. Dies ist in Curser nicht optimal, da immer publiziert werden muss bevor das Ergebnis erscheint.
 
-### Für die Webseite: 
-Mit Hilfe von ChatGPT wurden 8 individuelle Prompts erstellt. Bei Cursor eingegeben erschien darauf eine funktionierende Webseite, die ich gar nicht mehr gross ändern musste. Das Fine-tuning betraf hauptsächlich das Erscheinungsbild, Layout, Wording, etc. Dies ist in Curser nicht optimal, da immer publiziert werden muss bevor das Ergebnis erscheint.
+## Dokumentation der wichtigsten Prompts der App
 
-### Für die App
+Im Folgenden sind die Header der wichtigsten Prompts dokumentiert, die während der Entwicklung verwendet wurden: 
+
+#### 1. Brainstorming mit ChatGPT, um Ideen zu finden
+**Prompt**: "Gib mir Ideen für ein einfaches Bogenschiessen Spiel, welches als Web App programmiert werden kann. Mobile first. Es ist für die Webseite eines Bogenschützen Vereins"
+
+#### 2. Idee anhand Fragenkatalog finetunen
+**Prompt**: "Ich entscheide mich für Idee 1. Das Spiel soll von Lovable generiert werden. Ich möchte, dass du mir die Prompts für Lovable generierst, aber zuerst einen Katalog mit Fragen erstellst, um das Spiel genauer zu definieren."
+#### 3. Prompt in ChatGPT erstellen und editieren
+#### 4. Prompt n Lovable einfügen und finetunen
+
+Beim Finetuning ging es vor allem um Design, Farben, Layout, Figuren, etc.
+Die Darstellung auf Mobile ist leider nicht ideal (Full-screen Darstellung funktioniert nicht im Browser.) 
+Lovable tat sich auch schwer mit dem Erkennen und Handling von Mobile usern, sprich anzeigen von bestimmten Text wenn es ein Mobile user ist, etc.
 
 
 **Aha-Moment 1: Super, solange es funktionert**
 
-Ohne entsprechendes Coding Wissen ist es schwierig zu sagen die geschriebenen Zeilen Hand und Fuss haben. Zwar konnte Cursor Fehler selbst beheben wenn sie auftraten - ob der Code sinnvoll geschrieben ist weiss ich allerdings nicht.
+Ohne entsprechendes Coding Wissen ist es schwierig zu sagen ob die geschriebenen Zeilen Hand und Fuss haben. Zwar konnte Cursor Fehler selbst beheben wenn sie auftraten - ob der Code sinnvoll geschrieben ist weiss ich allerdings nicht.
+
+**Aha-Moment 2: Lovabe ist nicht gut in Physik**
+
+Ich musste mehrere Spielideen ausprobieren, um eine zu finden, die so funktioniert wie ich es mir vorgestellt hatte. Das klassische Bogenschiessen Spiel, wobei auf eine Zielscheibe gezielt wird und der Pfeil je nach Windstärke und Atmung anders fliegt hat nicht funktioniert! Lovable konnte die Physik dafür nicht berechnen.
+
+**Aha-Moment 3: Der erste Prompt muss gut sein**
+
+Es macht Sinn Prompts mit ChatGPT vorzubereiten. Am ersten Prompt merkt man direkt ob eine Idee funktioniert oder nicht. 
+
+**Aha-Moment 4: Wenn KI nicht will, dann will sie nicht**
+
+Gewisse Prompts funktioneren nicht, egal wie oft man umschreibt. Wie zB das Mobile Handling von Lovable. Die Anwort ist nicht "ich kann es nicht", sondern "ja klar ich mach es", aber es funktioniert nicht.
 
 
-### Neu gewonnene Learnings 
+## SEO/GEO-Strategie und Keyword-Recherche
 
-1. **Perfekt für einfache Websites**: Grundsätzlich ist das Vibe Coden mit Curser super. Kleine statische Seiten, für die sich Wordpress nicht lohnt kann man unkompliziert erstellen. Die einzelnen Files und die Architektur sind ersichtlich und editierbar.
-
-2. **ChatGPT prompts**: Ohne ChatGPT wären meine Prompts nicht so ausführlich ausgefallen. Es macht Sinn die Prompts so vorzubereiten bevor man sie bei Cursor eingibt.
-
-3. **Alerts auf Vercel**: Vercel weist daraufhin, wenn der Code Fehler erzeugt. Die Fehlermeldung kann man direkt wieder bei Cursor eingeben und - in meinem Fall - wurden sie behoben.
-
-4. **Auf Englisch geht's besser**: Gefühlt funktioniert prompten auf Englisch besser. Das liegt vielleicht auch an meinem Vokabular.
-
-
-## SEO-Strategie und Keyword-Recherche
+GEO fokussiert sich auf Klarheit, Fakten und die Einbettung in breitere Web-Kontexte, während SEO Struktur Keywords und technische Präzision belohnt. Ich habe daher beides beachtet.
 
 ### Keyword-Strategie
 
@@ -68,7 +82,7 @@ Das Haupt-GEO-Keyword **"Bogenschiessen in Rifferswil"** wurde durch folgende Ü
 2. **Suchintention**: Personen, die nach Bogenschiessen in dieser Region suchen, haben eine klare Absicht
 3. **Wettbewerb**: Lokale, spezifische Keywords haben weniger Konkurrenz als generische Begriffe
 
-### Weitere relevante Keywords:
+#### Weitere relevante Keywords:
 
 - "Bogensport Bezirk Affoltern"
 - "Bogenschiessen Hausen am Albis"
@@ -82,13 +96,10 @@ Das Haupt-GEO-Keyword **"Bogenschiessen in Rifferswil"** wurde durch folgende Ü
    - Individuelle, keyword-optimierte Meta Titles und Descriptions für jede Seite
    - Semantisches HTML mit korrekter Heading-Hierarchie (H1-H6)
    - Alt-Texte für alle Bilder
-   - Interne Verlinkung zwischen relevanten Seiten
 
 2. **Technical SEO**:
    - Automatisch generierte Sitemap (`sitemap.ts`)
    - Robots.txt Konfiguration (`robots.ts`)
-   - Canonical URLs zur Vermeidung von Duplicate Content
-   - Optimierte Ladezeiten durch Next.js Optimierungen
 
 3. **Structured Data (Schema.org)**:
    - **Organization Schema**: Für die Hauptseite, definiert den Verein als Organisation
@@ -108,27 +119,27 @@ Das Haupt-GEO-Keyword **"Bogenschiessen in Rifferswil"** wurde durch folgende Ü
    - Regelmäßige Aktualisierungshinweise ("Stand: Januar 2026") für Aktualität
    - Klare Strukturierung für bessere Lesbarkeit und Crawling
 
-### Keyword-Dichte und Platzierung:
+### GEO Strategie:
 
-Das Hauptkeyword "Bogenschiessen in Rifferswil" erscheint:
-- In Meta Descriptions aller Hauptseiten
-- In Hero-Sections der Landing Page und Verein-Seite
-- Natürlich im Content, ohne Keyword-Stuffing
-- In Structured Data als Teil der Beschreibungen
+- Klare, einfach formulierte Texte
+- Klare Navigation
+- FAQ Seite
+- Keywords im Content ohne Keyword-stuffing
 
-Die Keyword-Dichte wurde bewusst niedrig gehalten (ca. 1-2%), um natürliche, lesbare Texte zu gewährleisten und Google Penalties zu vermeiden.
 
 ## Persönliche Reflexion
 
-Dieses Projekt war eine wertvolle Lernerfahrung im Bereich der AI-gestützten Webentwicklung und SEO/GEO-Optimierung. 
+Dieses Projekt war eine wertvolle Lernerfahrung im Bereich der KI-gestützten Webentwicklung und SEO/GEO-Optimierung. 
 
 ### Lernerkenntnisse:
 
-1. **Balance zwischen SEO und User Experience**: Die Herausforderung lag darin, SEO-Optimierungen vorzunehmen, ohne die Benutzerfreundlichkeit zu beeinträchtigen. Die Lösung war, SEO als integralen Bestandteil des Designs zu betrachten, nicht als nachträgliche Optimierung.
+1. **Perfekt für einfache Websites**: Grundsätzlich ist das Vibe Coden mit Curser super. Kleine statische Seiten, für die sich Wordpress nicht lohnt kann man unkompliziert erstellen. Die einzelnen Files und die Architektur sind ersichtlich und editierbar.
 
-2. **SEO ist mehr als Keywords**: Structured Data, technische Optimierungen und Content-Qualität sind mindestens genauso wichtig wie Keyword-Optimierung.
+2. **ChatGPT prompts**: Ohne ChatGPT wären meine Prompts nicht so ausführlich ausgefallen. Es macht Sinn die Prompts extern vorzubereiten und kritisch prüfen zu lassen bevor man sie bei Cursor eingibt.
 
+3. **Balance zwischen SEO und User Experience**: Die Herausforderung liegt darin, SEO-Optimierungen vorzunehmen, ohne die Benutzerfreundlichkeit zu beeinträchtigen. SEO ist als ein integraler Bestandteil des Designs zu betrachten, nicht als nachträgliche Optimierung.
 
+2. **SEO/GEO ist mehr als Keywords**: Structured Data, technische Optimierungen und Content-Qualität sind mindestens genauso wichtig wie Keyword-Optimierung.
 
 
 
