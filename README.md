@@ -54,11 +54,11 @@ Ohne entsprechendes Coding Wissen ist es schwierig zu sagen die geschriebenen Ze
 
 ### Neu gewonnene Learnings 
 
-1. **Super für einfache Websites**: Grundsätzlich ist das Vibe Coden mit Curser super. Kleine Seiten für die sich Wordpress nicht lohnt kann man schnell erstellen, sieht die einzelnen Files und kann sie auch editieren. 
+1. **Perfekt für einfache Websites**: Grundsätzlich ist das Vibe Coden mit Curser super. Kleine Seiten für die sich Wordpress nicht lohnt kann man schnell erstellen, sieht die einzelnen Files sowie die Architektur und kann sie auch editieren. 
 
-2. **ChatGPT prompts**: ChatGPT zu verwenden um Prompts zu generieren scheint Sinn zu machen. Ohne ChatGPT wären die Prompts nicht so ausführlich ausgefallen.
+2. **ChatGPT prompts**: ChatGPT zu verwenden um Prompts zu generieren scheint Sinn zu machen. Ohne ChatGPT wären meine Prompts nicht so ausführlich ausgefallen.
 
-3. **Fehler Alerts auf Vercel**: Vercel weist daraufhin, wenn der Code Fehler erzeugt. Die Fehlermeldung kann man direkt wieder bei Cursor eingeben und - in meinem Fall - wurden sie behoben.
+3. **Alerts auf Vercel**: Vercel weist daraufhin, wenn der Code Fehler erzeugt. Die Fehlermeldung kann man direkt wieder bei Cursor eingeben und - in meinem Fall - wurden sie behoben.
 
 4. **Auf Englisch geht's besser**: Gefühlt funktioniert prompten auf Englisch besser. Das liegt vielleicht auch an meinem Vokabular.
 
