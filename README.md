@@ -16,13 +16,45 @@ Dieses Projekt umfasst die Entwicklung einer modernen, SEO/GEO-optimierten Marke
 
 Die Website umfasst fünf Hauptseiten: Landing Page, Verein, Training, Preise und Über uns, sowie eine FAQ-Sektion. Anstelle von Bildern wurden Platzhalter verwendet
 
-## Dokumentation der wichtigsten Prompts der Webseite
+## Entwicklungsprozess und Prompts der Webseite
 
-Im Folgenden sind die Header der wichtigsten Prompts dokumentiert, die während der Entwicklung verwendet wurden (die Prompts selbst sind zu lang): 
+Im Folgenden sind die Header der wichtigsten Prompts dokumentiert, die während der Entwicklung verwendet wurden (die Prompts selbst wurden von ChatGPT erzeugt und sind zu lang, ein Beispiel ist aufgelistet): 
 
 #### 1. Initiale Projektstruktur der Webseite
 
-**Prompt**: "Erstelle eine Next.js Website mit App Router für einen Bogensportverein. Die Website soll SEO/GEO-optimiert sein mit Schema.org Structured Data. Strukturiere das Projekt mit klarer Trennung von Components, Content und Pages."
+**Prompt**: "ECreate a Next.js (latest) project using the App Router and TypeScript. Use Tailwind CSS. Deploy-ready for Vercel.
+
+Build a website for an archery club:
+Name: "Pfeil & Bogen"
+Address: Rifferswilerstrasse, 8915 Hausen am Albis, Switzerland
+Service area: Bezirk Affoltern (ZH)
+Language: German only
+Primary GEO keyword: "Bogenschießen in Rifferswil" (include naturally in key sections)
+Audience: new + existing members, core 25–50 years
+Style: modern, colors based on the provided logo (black/gold/green), lots of whitespace, strong typography.
+
+Technical + GEO requirements:
+- Use semantic HTML (header/nav/main/section/article/footer), clear headings (single H1 per page).
+- Each page must include: unique meta title/description, Open Graph tags, canonical.
+- Add robots.txt and sitemap.xml allowing crawling (no blocking).
+- Add Schema.org JSON-LD:
+  - Landing: Organization + SportsActivityLocation
+  - Verein page: SportsActivityLocation (amenities)
+  - Training page: Event list (each training item as Event)
+  - Preise page: Offer + priceCurrency CHF
+  - Über uns page: Person entries (board members)
+- Add “LLM citation readiness”: short factual paragraphs, explicit labels, stable IDs/anchors, and a “Stand: <date>” note on Training/Prices.
+- Put all structured data in a reusable component, and keep content in typed objects in /content (in-code).
+- Pages required: Landing (/), Verein (/verein), Training (/training), Preise (/preise), Über uns (/ueber-uns).
+- Add a shared layout with header navigation and footer including club name and address.
+- Include a simple “Kontakt per E-Mail” CTA with mailto link (no form).
+
+Also create:
+- /public assets placeholders folder and a plan for images (using next/image).
+- A minimal design system: button, card, section container components.
+
+Output full file structure and implement the complete site.
+"
 
 #### 2. Content-Daten (Training/Preise/Vorstand) als Code-Strukturen
 
@@ -36,7 +68,7 @@ Im Folgenden sind die Header der wichtigsten Prompts dokumentiert, die während 
 
 Mit Hilfe von ChatGPT wurden die individuellen Prompts erstellt. Bei Cursor eingegeben erschien daraufhin eine funktionierende Webseite, die ich gar nicht mehr gross ändern musste. Das Fine-tuning betraf hauptsächlich das Erscheinungsbild, Layout, Wording, etc. Dies ist in Curser nicht optimal, da immer publiziert werden muss bevor das Ergebnis erscheint.
 
-## Dokumentation der wichtigsten Prompts der App
+## Entwicklungsprozess und Prompts der App
 
 Im Folgenden sind die Header der wichtigsten Prompts dokumentiert, die während der Entwicklung verwendet wurden: 
 
@@ -45,6 +77,7 @@ Im Folgenden sind die Header der wichtigsten Prompts dokumentiert, die während 
 
 #### 2. Idee anhand Fragenkatalog finetunen
 **Prompt**: "Ich entscheide mich für Idee 1. Das Spiel soll von Lovable generiert werden. Ich möchte, dass du mir die Prompts für Lovable generierst, aber zuerst einen Katalog mit Fragen erstellst, um das Spiel genauer zu definieren."
+
 #### 3. Prompt in ChatGPT erstellen und editieren
 #### 4. Prompt n Lovable einfügen und finetunen
 
@@ -52,6 +85,7 @@ Beim Finetuning ging es vor allem um Design, Farben, Layout, Figuren, etc.
 Die Darstellung auf Mobile ist leider nicht ideal (Full-screen Darstellung funktioniert nicht im Browser.) 
 Lovable tat sich auch schwer mit dem Erkennen und Handling von Mobile usern, sprich anzeigen von bestimmten Text wenn es ein Mobile user ist, etc.
 
+## Aha Momente
 
 **Aha-Moment 1: Super, solange es funktionert**
 
